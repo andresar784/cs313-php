@@ -115,6 +115,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Assigments</h2>
+			
 			<p class="lead"> Click below to find the assignments</p>
 			<a class="lead" href="assignments.php">Assignments</a>
 			
