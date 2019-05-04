@@ -89,12 +89,21 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
 				<h2>About me</h2>
-					<p class="lead">I'm Andres Rodriguez, I am pursuing a degree in Software Engineering. I am happy to have the opportunity to learn how to build 
+					<p class="lead">I'm Andres Rodriguez, I am pursuing a degree in Software Engineering. I'm studing in <a href="http://www.byui.edu/">Brigham Young Idaho University</a> I am happy to have the opportunity to learn how to build 
 							nice things.</p>
+					<p class="lead"> I'm from Rivera, Uruguay, near of the border of Brasil, we have a opened border, we can cross to Brasil walking,
+							and nothing will ask for documents..see map below..</p>
+			<!--Google map-->
+		<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75981.30377984991!2d-55.559349714897145!3d-30.908716950258583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a9feec4125885f%3A0xf22b95e7bd8ced7a!2sRivera%2C+Departamento+de+Rivera!5e0!3m2!1ses-419!2suy!4v1556985640621!5m2!1ses-419!2suy" 
+		width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<!--Google Maps-->
 			</div>
         </div>
       </div>
     </section>
+	
 
     <section id="social" class="bg-light">
       <div class="container">
