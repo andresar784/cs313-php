@@ -53,13 +53,15 @@
       </div>
     </nav>
 	
-	
-    <header class="bg-primary text-white">
+	<header class="bg-primary text-white">
       <div class="container text-center">
         <h1>Welcome to the Home Page</h1>
         <p class="lead">Presentation Page</p>
       </div>
     </header>
+	
+	
+    
 	
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
