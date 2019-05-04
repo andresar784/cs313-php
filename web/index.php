@@ -91,7 +91,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
 				<h2>About me</h2>
-					<p class="lead">I'm Andres Rodriguez, I am pursuing a degree in Software Engineering. I'm studing in <a href="http://www.byui.edu/">Brigham Young Idaho University</a> I am happy to have the opportunity to learn how to build 
+					<p class="lead">I'm Andres Rodriguez, I am pursuing a degree in Software Engineering. I'm studing in <a href="http://www.byui.edu/" target="_blank">Brigham Young Idaho University</a> I am happy to have the opportunity to learn how to build 
 							nice things.</p>
 					<p class="lead"> I'm from Rivera, Uruguay, near of the border of Brasil, we have a opened border, we can cross to Brasil walking,
 							and nothing will ask for documents..see map below..</p>
