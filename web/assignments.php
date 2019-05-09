@@ -65,7 +65,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Assignments</h2>
-			      <p class="lead" <a href="C:\\cs313-php\web\week3"></a>Prove 3</p>
+			      <a class="lead" href="https://radiant-beyond-36702.herokuapp.com/week3/index.php">Prove 3</a>
             </div>
           </div>
         </div>
