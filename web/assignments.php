@@ -65,7 +65,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Assignments</h2>
-			<p class="lead">Coming soon</p>
+			      <p class="lead" <a href="C:\\cs313-php\web\week3"></a>Prove 3</p>
             </div>
           </div>
         </div>
