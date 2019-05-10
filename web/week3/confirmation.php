@@ -69,13 +69,9 @@ session_start();
 			<p>Shipping Address:</p><br>
 			<p>This order will be delivered in 2 weeks</p><br>
 			
-			<?php
-				echo $address;
-				echo "<br/>";
-				echo $city;
-				echo "<br/>";				
-				echo $state;
-        ?>
+			<p>The order will send to: <?php echo $address; ?></p><br>
+			<p>City:  <?php echo $city; ?><br>
+			<p>State: <?php echo $state; ?>
         </div>
 </div>
 </div>
