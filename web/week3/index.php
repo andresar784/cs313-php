@@ -1,5 +1,12 @@
 <?php
 session_start();
+
+if (! isset ( $_SESSION ['add_cart'] )) {
+  $_SESSION ['add_cart'] = array ();
+}
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
