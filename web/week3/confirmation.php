@@ -66,10 +66,10 @@ session_start();
 				echo "</ul>";
 			?>
 			<br/>
-			<p>Shipping Address:</p><br>
-			<p>This order will be delivered in 2 weeks</p><br>
+			<p>Shipping Address:</p>
+			<p>This order will be delivered in 2 weeks</p>
 			
-			<p>The order will send to: <?php echo $address; ?></p><br>
+			<p>The order will send to: <?php echo $address; ?></p>
 			<p>City:  <?php echo $city; ?><br>
 			<p>State: <?php echo $state; ?>
         </div>
