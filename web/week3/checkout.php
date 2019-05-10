@@ -51,7 +51,7 @@ session_start();
         <div class="p-3 text-white text-center">
           <h2>Checkout page</h2>
 		  <h4>Enter your address below</h4>
-         	<form method="post" action="confirmPage.php">
+         	<form method="post" action="confirmation.php">
           <div class="form-group">
               <label for="inputAddress">Address</label>
               <input type="text" name="address" id="inputAddress" placeholder="Your address" size="25">
@@ -70,7 +70,7 @@ session_start();
 
             <button type="submit" class="btn btn-secondary">Submit Purchase</button>
             <a class="btn btn-secondary" href="index.php" role="button">Return to Cart</a>
-</form>	
+      </form>	
         </div>
 </div>
 
