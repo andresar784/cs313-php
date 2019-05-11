@@ -49,7 +49,7 @@ session_start();
     </div>
   </div>
 </nav>
-<form method="get">
+
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
@@ -58,8 +58,7 @@ session_start();
         <div class="panel-body"><img src="pictures/dulce de leche.jpg" class="img-responsive" alt="Image"></div>
 		<div class="panel-footer">Delicious and hand made</div>
 		<button class="btn btn-secondary" ?id="Dulce de leche">Add to Cart</button>
-    </form>
-    <form method="get">
+
       </div>
     </div>
     <div class="col-sm-4"> 
@@ -70,8 +69,8 @@ session_start();
 		<button class="btn btn-secondary" ?id="Caramelos" >Add to Cart</button>
     </div>
 	</div>
-  </form>
-  </form method="get">
+  
+  
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading" id="vacumm" value="Vacuum">Vacuum</div>
@@ -81,11 +80,11 @@ session_start();
 	</div>
   </div>
 </div><br>
-</form>
+
 
 <div class="container">    
   <div class="row">
-  <form method="get">
+  
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading" id="yerba" value="Yerba">Yerba mate</div>
@@ -94,8 +93,8 @@ session_start();
 		<button class="btn btn-secondary" ?id="Yerba Mate" >Add to Cart</button>
       </div>
     </div>
-    </form>
-    <form method="get">
+   
+   
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading" id="mate" value="Mate">Mate</div>
@@ -104,8 +103,8 @@ session_start();
 			<button class="btn btn-secondary" ?id="Mate">Add to Cart</button>
       </div>
     </div>
-    <form>
-    <form method="get" action="process.php">
+   
+   
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading" id="bombilla" value="Bombilla">Bombilla</div>
@@ -114,7 +113,7 @@ session_start();
 			<button  class="btn btn-secondary" ?id="Bombilla">Add to Cart</button>
 				
      </div>
-     </form> 
+
     </div>
   </div>
 
