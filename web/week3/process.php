@@ -34,15 +34,17 @@ session_start();
       });
     });
   </script>
-  <?php
+  
+  
+</head>
+<body>
+
+<?php
     if (! isset ( $_SESSION ['add_cart'] )) {
      $_SESSION ['add_cart'] = array();
 
     array_push($_SESSION['add_cart'], $_GET['id']);
   ?>
-  
-</head>
-<body>
 
 <div class="jumbotron">
   <div class="container text-center">
