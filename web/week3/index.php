@@ -50,7 +50,7 @@ session_start();
         <div class="panel-heading" id="dulce" value="Dulce de leche">Dulce de leche</div>
         <div class="panel-body"><img src="pictures/dulce de leche.jpg" class="img-responsive" alt="Image"></div>
 		<div class="panel-footer">Delicious and hand made</div>
-		<button class="btn btn-secondary" ?id="Dulce de leche">Add to Cart</button>
+		<button class="btn btn-secondary" id="Dulce de leche">Add to Cart</button>
 
       </div>
     </div>
@@ -59,7 +59,7 @@ session_start();
         <div class="panel-heading" id="caramelos" value="Caramelos de dulce de leche" >Caramelos de dulce de leche</div>
         <div class="panel-body"><img src="pictures/caramelos dulce de leche.jpg" class="img-responsive"  alt="Image"></div>
         <div class="panel-footer">Pack of 10 delicious candies</div>
-		<button class="btn btn-secondary" ?id="Caramelos" >Add to Cart</button>
+		<button class="btn btn-secondary" id="Caramelos" >Add to Cart</button>
     </div>
 	</div>
   
@@ -69,7 +69,7 @@ session_start();
         <div class="panel-heading" id="vacumm" value="Vacuum">Vacuum</div>
         <div class="panel-body"><img src="pictures/termo.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Vacuum to maintain warm watter</div>
-		<button class="btn btn-secondary" ?id="Vacuum" >Add to Cart</button>
+		<button class="btn btn-secondary" id="Vacuum" >Add to Cart</button>
 	</div>
   </div>
 </div><br>
@@ -83,7 +83,7 @@ session_start();
         <div class="panel-heading" id="yerba" value="Yerba">Yerba mate</div>
         <div class="panel-body"><img src="pictures/yerba mate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">To prepare delicious mate</div>
-		<button class="btn btn-secondary" ?id="Yerba Mate" >Add to Cart</button>
+		<button class="btn btn-secondary" id="Yerba Mate" >Add to Cart</button>
       </div>
     </div>
    
@@ -93,7 +93,7 @@ session_start();
         <div class="panel-heading" id="mate" value="Mate">Mate</div>
         <div class="panel-body"><img src="pictures/mate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Where you prepare your delicious mate</div>
-			<button class="btn btn-secondary" ?id="Mate">Add to Cart</button>
+			<button class="btn btn-secondary" id="Mate">Add to Cart</button>
       </div>
     </div>
    
@@ -103,7 +103,7 @@ session_start();
         <div class="panel-heading" id="bombilla" value="Bombilla">Bombilla</div>
         <div class="panel-body"><img src="pictures/bombilla mate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">To drink the mate</div>
-			<button  class="btn btn-secondary" ?id="Bombilla">Add to Cart</button>
+			<button  class="btn btn-secondary" id="Bombilla">Add to Cart</button>
 				
      </div>
 
@@ -114,7 +114,7 @@ session_start();
 </div><br><br>
 
 <footer class="container-fluid text-center">
-  <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>  
+  <p>Online Store Copyright 2018 - <?php echo date('Y')?></p>  
 </footer>
 
 </body>

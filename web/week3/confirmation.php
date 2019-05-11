@@ -58,12 +58,7 @@ session_start();
 			$state = htmlspecialchars($_POST["state"]);
 			
 			
-			 $arrlength = count($_SESSION["add_cart"]);
-			echo "<ul>";
-				for($x = 0; $x < $arrlength; $x++) {
-				echo "<li>" . $_SESSION["process"][$x] . "</li>";
-				}
-				echo "</ul>";
+			 
 			?>
 			<br/>
 			<p>Shipping Address:</p>
@@ -72,6 +67,15 @@ session_start();
 			<p>The order will send to: <?php echo $address; ?></p>
 			<p>City:  <?php echo $city; ?><br>
 			<p>State: <?php echo $state; ?>
+      <?php
+      $arrlength = count($_SESSION["add_cart"]);
+			echo "<ul>";
+				for($x = 0; $x < $arrlength; $x++) {
+				echo "<li>" . $_SESSION["process"][$x] . "</li>";
+				}
+        echo "</ul>";
+        ?>
+      
         </div>
 </div>
 </div>
