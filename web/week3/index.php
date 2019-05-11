@@ -1,8 +1,5 @@
 <?php
 session_start();
-
-if (! isset ( $_SESSION ['add_cart'] )) {
-  $_SESSION ['add_cart'] = array ();
 }
 
 
@@ -52,7 +49,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
     </div>
   </div>
 </nav>
-
+<form method="get">
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
@@ -60,8 +57,9 @@ if (! isset ( $_SESSION ['add_cart'] )) {
         <div class="panel-heading" id="dulce" value="Dulce de leche">Dulce de leche</div>
         <div class="panel-body"><img src="pictures/dulce de leche.jpg" class="img-responsive" alt="Image"></div>
 		<div class="panel-footer">Delicious and hand made</div>
-		<button class="btn btn-secondary" value="Dulce de leche">Add to Cart</button>
-			
+		<button class="btn btn-secondary" ?id="Dulce de leche">Add to Cart</button>
+    </form>
+    <form method="get">
       </div>
     </div>
     <div class="col-sm-4"> 
@@ -69,45 +67,54 @@ if (! isset ( $_SESSION ['add_cart'] )) {
         <div class="panel-heading" id="caramelos" value="Caramelos de dulce de leche" >Caramelos de dulce de leche</div>
         <div class="panel-body"><img src="pictures/caramelos dulce de leche.jpg" class="img-responsive"  alt="Image"></div>
         <div class="panel-footer">Pack of 10 delicious candies</div>
-		<button class="btn btn-secondary" value="Caramelos">Add to Cart</button>
+		<button class="btn btn-secondary" ?id="Caramelos" >Add to Cart</button>
     </div>
 	</div>
+  </form>
+  </form method="get">
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading" id="vacumm" value="Vacuum">Vacuum</div>
         <div class="panel-body"><img src="pictures/termo.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Vacuum to maintain warm watter</div>
-		<button class="btn btn-secondary" value="Vacuum">Add to Cart</button>
+		<button class="btn btn-secondary" ?id="Vacuum" >Add to Cart</button>
 	</div>
   </div>
 </div><br>
+</form>
 
 <div class="container">    
   <div class="row">
+  <form method="get">
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading" id="yerba" value="Yerba">Yerba mate</div>
         <div class="panel-body"><img src="pictures/yerba mate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">To prepare delicious mate</div>
-		<button class="btn btn-secondary" value="Yerba Mate">Add to Cart</button>
+		<button class="btn btn-secondary" ?id="Yerba Mate" >Add to Cart</button>
       </div>
     </div>
+    </form>
+    <form method="get">
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading" id="mate" value="Mate">Mate</div>
         <div class="panel-body"><img src="pictures/mate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Where you prepare your delicious mate</div>
-			<button class="btn btn-secondary" value="Mate">Add to Cart</button>
+			<button class="btn btn-secondary" ?id="Mate">Add to Cart</button>
       </div>
     </div>
+    <form>
+    <form method="get" action="process.php">
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading" id="bombilla" value="Bombilla">Bombilla</div>
         <div class="panel-body"><img src="pictures/bombilla mate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">To drink the mate</div>
-			<button class="btn btn-secondary" value="Bombilla">Add to Cart</button>
+			<button  class="btn btn-secondary" ?id="Bombilla">Add to Cart</button>
 				
-     </div> 
+     </div>
+     </form> 
     </div>
   </div>
 
