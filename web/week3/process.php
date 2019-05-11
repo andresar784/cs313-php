@@ -1,10 +1,5 @@
 <?php
 session_start();
-
-if (! isset ( $_SESSION ['add_cart'] )) {
-  $_SESSION ['add_cart'] = array();
-
-array_push($_SESSION['add_cart'], $_GET['id']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +34,12 @@ array_push($_SESSION['add_cart'], $_GET['id']);
       });
     });
   </script>
+  <?php
+    if (! isset ( $_SESSION ['add_cart'] )) {
+     $_SESSION ['add_cart'] = array();
+
+    array_push($_SESSION['add_cart'], $_GET['id']);
+  ?>
   
 </head>
 <body>
