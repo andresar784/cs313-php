@@ -78,7 +78,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
         <div class="p-3 text-white text-center">
           <h2>Shopping Cart</h2>
           <?php
-          $items = count("add_cart");
+          $items = count('add_cart', 1);
           echo $items;
           ?>
           <button class="btn btn-secondary" id="removeAll">Remove all items</button>
