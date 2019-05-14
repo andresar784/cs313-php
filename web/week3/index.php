@@ -42,7 +42,7 @@ session_start();
     </div>
   </div>
 </nav>
-
+<form method="get">
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
@@ -111,7 +111,7 @@ session_start();
   </div>
 
 
-</div><br><br>
+</div><br><br></form>
 
 <footer class="container-fluid text-center">
   <p>Online Store Copyright 2018 - <?php echo date('Y')?></p>  
