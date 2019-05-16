@@ -1,9 +1,6 @@
 <?php
 session_start();
-if (! isset ( $_SESSION ['add_cart'] )) {
-  $_SESSION ['add_cart'] = array();
-  }
-  array_push($_SESSION['add_cart'], $_GET['id']);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +18,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
       $("#removeAll").click(function(){
         $.post("remove_all.php",
         {
+          
         },
         );
       alert("Items have been removed");

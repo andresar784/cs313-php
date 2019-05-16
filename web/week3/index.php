@@ -45,7 +45,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
     </div>
   </div>
 </nav>
-<form method="get">
+<form method="get" action="process.php">
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
