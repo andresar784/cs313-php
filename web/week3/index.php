@@ -54,6 +54,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
         <div class="panel-body"><img src="pictures/dulce de leche.jpg" class="img-responsive" alt="Image"></div>
 		<div class="panel-footer">Delicious and hand made</div>
 		<button class="btn btn-secondary" id="Dulce de leche">Add to Cart</button>
+    <input type="checkbox" name="item[]" id="product" value="Dulce de leche">
 
       </div>
     </div>
@@ -63,6 +64,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
         <div class="panel-body"><img src="pictures/caramelos dulce de leche.jpg" class="img-responsive"  alt="Image"></div>
         <div class="panel-footer">Pack of 10 delicious candies</div>
 		<button class="btn btn-secondary" id="Caramelos" >Add to Cart</button>
+    <input type="checkbox" name="item[]" id="product" value="Caramelos">
     </div>
 	</div>
   
@@ -73,6 +75,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
         <div class="panel-body"><img src="pictures/termo.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Vacuum to maintain warm watter</div>
 		<button class="btn btn-secondary" id="Vacuum" >Add to Cart</button>
+    <input type="checkbox" name="item[]" id="product" value="Vacuum">
 	</div>
   </div>
 </div><br>
@@ -87,6 +90,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
         <div class="panel-body"><img src="pictures/yerba mate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">To prepare delicious mate</div>
 		<button class="btn btn-secondary" id="Yerba Mate" >Add to Cart</button>
+    <input type="checkbox" name="item[]" id="product" value="Yerba Mate">
       </div>
     </div>
    
@@ -97,6 +101,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
         <div class="panel-body"><img src="pictures/mate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Where you prepare your delicious mate</div>
 			<button class="btn btn-secondary" id="Mate">Add to Cart</button>
+      <input type="checkbox" name="item[]" id="product" value="Mate">
       </div>
     </div>
    
@@ -107,6 +112,7 @@ if (! isset ( $_SESSION ['add_cart'] )) {
         <div class="panel-body"><img src="pictures/bombilla mate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">To drink the mate</div>
 			<button  class="btn btn-secondary" id="Bombilla">Add to Cart</button>
+      <input type="checkbox" name="item[]" id="product" value="Bombilla">
 				
      </div>
 
