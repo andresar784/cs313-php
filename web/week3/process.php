@@ -85,6 +85,11 @@ session_start();
         
         <div class="p-3 text-white text-center">
              <?php
+
+             $item = $_GET['item'];
+              foreach ($item as $items){
+                echo $items;
+              }
               
 			  $arrlength = count($_SESSION["add_cart"]);
 				if($arrlength > 0)
