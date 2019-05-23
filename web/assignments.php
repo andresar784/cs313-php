@@ -66,6 +66,8 @@
           <div class="col-lg-8 mx-auto">
             <h2>Assignments</h2>
 			      <a class="lead" href="https://radiant-beyond-36702.herokuapp.com/week3/index.php">Prove 3</a>
+            <a class="lead" href="https://radiant-beyond-36702.herokuapp.com/bus/index.php">Project 1 </a>
+
             </div>
           </div>
         </div>
