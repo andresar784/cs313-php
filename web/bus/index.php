@@ -17,7 +17,9 @@ $db = DB::init();
 </head>
 <body>
 
-
+<?php
+	
+?>
 
 
 <div class="jumbotron">
