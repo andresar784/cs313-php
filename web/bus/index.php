@@ -24,6 +24,7 @@ $db = DB::init();
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
 		$place_name[$row['id']] = $row['place_name'];
 	}
+	
 ?>
 
 
