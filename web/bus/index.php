@@ -13,25 +13,25 @@ $db = DB::init();
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="style.css" rel="stylesheet">
- 
+
 </head>
 <body>
 
 <?php
-	$statement = $db->prepare("SELECT id, place_name FROM place");
+	$statement = $db->prepare("SELECT placeid, name FROM place");
 	$statement->execute();
 	$place_name = array();
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-		$place_name[$row['id']] = $row['place_name'];
+		$place_name[$row['placeid']] = $row['name'];
 	}
-	
-?>
+
+>
 
 
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
-    <h3>Buy your ticket now</h3>      
+    <h3>Buy your ticket now</h3>
     </div>
 </div>
 <nav class="navbar navbar-inverse">
@@ -40,9 +40,9 @@ $db = DB::init();
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
-	  
+
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -56,7 +56,7 @@ $db = DB::init();
   </div>
 </nav>
 
-<div class="container"> 
+<div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
 		<div class="form-group">
@@ -68,7 +68,7 @@ $db = DB::init();
 					<option><?php echo $name[4]?></option>
 					<option><?php echo $name[5]?></option>
 				</select>
-				
+
 		</div>
 		</div>
 		<div class="col-xs-6">
@@ -95,11 +95,11 @@ $db = DB::init();
 				</select>
 		</div>
 		</div>
-			
+
 	</div>
 	</div>
 <footer class="container-fluid text-center">
-  <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>  
+  <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
 </footer>
 
 </body>
