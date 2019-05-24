@@ -62,11 +62,11 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">From:</label>
 			<select class="form-control" id="selectFrom">
-					<option value="Montevideo"><?php echo $place_name[1]?></option>
-					<option><?php echo $place_name[2]?></option>
-					<option><?php echo $place_name[3]?></option>
-					<option><?php echo $place_name[4]?></option>
-					<option><?php echo $place_name[5]?></option>
+					<option value="Mvd"><?php echo $place_name[1]?></option>
+					<option value="Dur"><?php echo $place_name[2]?></option>
+					<option value="Ptr"><?php echo $place_name[3]?></option>
+					<option value="Tbo"><?php echo $place_name[4]?></option>
+					<option value="Rvr"><?php echo $place_name[5]?></option>
 				</select>
 
 		</div>
@@ -75,11 +75,11 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">To:</label>
 				<select class="form-control" id="selectTo">
-					<option><?php echo $place_name[1]?></option>
-					<option><?php echo $place_name[2]?></option>
-					<option><?php echo $place_name[3]?></option>
-					<option><?php echo $place_name[4]?></option>
-					<option><?php echo $place_name[5]?></option>
+					<option value="1"><?php echo $place_name[1]?></option>
+					<option value="2"><?php echo $place_name[2]?></option>
+					<option value="3"><?php echo $place_name[3]?></option>
+					<option value="4"><?php echo $place_name[4]?></option>
+					<option value="5"><?php echo $place_name[5]?></option>
 			</select>
 		</div>
 		</div>
@@ -98,9 +98,24 @@ $db = DB::init();
 
 	</div>
 	</div>
+	
+	$(document).ready(function(){
+    $('#selectFrom').on('change', function() {
+      if ( this.value == 'Mvd')
+     		{
+        $("#selectTo.1").hide();
+      }
+      else if
+      {
+        $("#").hide();
+      }
+    });
+});
+
 <footer class="container-fluid text-center">
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
 </footer>
+
 
 </body>
 </html>
