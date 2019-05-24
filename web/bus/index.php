@@ -95,11 +95,6 @@ $db = DB::init();
 		</div>
 			
 	</div>
-	<div style="margin:3em;">
-				
-				<br><br>
-				<button type="button" href="confirmation.php" class="btn btn-primary btn-lg" id="load" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing Order">Confirm 1/5</button>
-			</div>
  </div><br><br>
 
 <footer class="container-fluid text-center">
