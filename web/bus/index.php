@@ -59,11 +59,11 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">From:</label>
 			<select class="form-control" id="exampleFormControlSelect1">
-					<option><?php echo $place_name[1]?></option>
-					<option><?php echo $place_name[2]?></option>
-					<option><?php echo $place_name[3]?></option>
-					<option><?php echo $place_name[4]?></option>
-					<option><?php echo $place_name[5]?></option>
+					<option><?php echo $name[1]?></option>
+					<option><?php echo $name[2]?></option>
+					<option><?php echo $name[3]?></option>
+					<option><?php echo $name[4]?></option>
+					<option><?php echo $name[5]?></option>
 				</select>
 				
 		</div>
@@ -94,7 +94,7 @@ $db = DB::init();
 		</div>
 			
 	</div>
-			</div>
+	</div>
 <footer class="container-fluid text-center">
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>  
 </footer>
