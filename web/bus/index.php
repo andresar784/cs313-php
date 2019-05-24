@@ -6,7 +6,7 @@ $db = DB::init();
 <html lang="en">
 <head>
   <title>Bus Company</title>
-   <script type="text/javascript" src="js.js"></script>
+  <script type="text/javascript" src="js.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -25,7 +25,6 @@ $db = DB::init();
 		$place_name[$row['id']] = $row['name'];
 	}
 ?>
-<h1> Some text </h1>
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
@@ -95,8 +94,7 @@ $db = DB::init();
 		</div>
 			
 	</div>
- </div><br><br>
-
+			</div>
 <footer class="container-fluid text-center">
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>  
 </footer>
