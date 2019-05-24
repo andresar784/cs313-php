@@ -17,14 +17,7 @@ $db = DB::init();
 </head>
 <body>
 
-<?php
-	$statement = $db->prepare("SELECT id, name FROM place");
-	$statement->execute();
-	$name = array();
-	while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-		$name[$row['id']] = $row['name'];
-	}
-?>
+
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
