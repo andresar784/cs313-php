@@ -17,15 +17,7 @@ $db = DB::init();
 </head>
 <body>
 
-<?php
-	$statement = $db->prepare("SELECT id, place_name FROM place");
-	$statement->execute();
-	$place_name = array();
-	while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-		$place_name[$row['id']] = $row['place_name'];
-	}
-	
-?>
+
 
 
 <div class="jumbotron">
