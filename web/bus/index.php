@@ -22,7 +22,7 @@ $db = DB::init();
 	$statement->execute();
 	$place_name = array();
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-		$place_name[$row['id']] = $row['name'];
+		$place_name[$row['id']] = $row['place_name'];
 	}
 ?>
 
