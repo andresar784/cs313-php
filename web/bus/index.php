@@ -18,14 +18,14 @@ $db = DB::init();
 <body>
 
 <?php
-	$statement = $db->prepare("SELECT id, place_name FROM place");
+	$statement = $db->prepare("SELECT id, name FROM place");
 	$statement->execute();
-	$place_name = array();
+	$name = array();
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-		$place_name[$row['id']] = $row['place_name'];
+		$place_name[$row['id']] = $row['name'];
 	}
 ?>
-
+<h1> Some text </h1>
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
