@@ -99,6 +99,11 @@ $db = DB::init();
 	</div>
 	</div>
 	
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
+</footer>
+<script>
 	$(document).ready(function(){
     $('#selectFrom').on('change', function() {
       if ( this.value == 'Mvd')
@@ -111,10 +116,7 @@ $db = DB::init();
       }
     });
 });
-
-<footer class="container-fluid text-center">
-  <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
-</footer>
+</script>
 
 
 </body>
