@@ -25,7 +25,7 @@ $db = DB::init();
 		$place_name[$row['placeid']] = $row['name'];
 	}
 
->
+?>
 
 
 <div class="jumbotron">
