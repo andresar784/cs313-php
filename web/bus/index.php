@@ -72,11 +72,11 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">To:</label>
 				<select class="form-control" id="exampleFormControlSelect2">
-					<option><?php echo $place_name[1]?></option>
-					<option><?php echo $place_name[2]?></option>
-					<option><?php echo $place_name[3]?></option>
-					<option><?php echo $place_name[4]?></option>
-					<option><?php echo $place_name[5]?></option>
+					<option><?php echo $name[1]?></option>
+					<option><?php echo $name[2]?></option>
+					<option><?php echo $name[3]?></option>
+					<option><?php echo $name[4]?></option>
+					<option><?php echo $name[5]?></option>
 			</select>
 		</div>
 		</div>
