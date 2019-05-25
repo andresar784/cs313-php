@@ -103,9 +103,7 @@ $db = DB::init();
 <footer class="container-fluid text-center">
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
 </footer>
-<script>
-	
-</script>
+
 
 
 </body>
