@@ -10,7 +10,7 @@ $(document).ready(function(){
   $('#selectFrom').on('change', function() {
     if ( this.value == 'Mvd')
        {
-      $("t1").hide();
+      $("#t1").hide();
     }
     
   });
