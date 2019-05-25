@@ -75,11 +75,11 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">To:</label>
 				<select class="form-control" id="selectTo">
-					<option value="1"><?php echo $place_name[1]?></option>
-					<option value="2"><?php echo $place_name[2]?></option>
-					<option value="3"><?php echo $place_name[3]?></option>
-					<option value="4"><?php echo $place_name[4]?></option>
-					<option value="5"><?php echo $place_name[5]?></option>
+					<option id="t1" ><?php echo $place_name[1]?></option>
+					<option id="t2"><?php echo $place_name[2]?></option>
+					<option id="t3"><?php echo $place_name[3]?></option>
+					<option id="t4"><?php echo $place_name[4]?></option>
+					<option id="t5"><?php echo $place_name[5]?></option>
 			</select>
 		</div>
 		</div>
@@ -104,18 +104,7 @@ $db = DB::init();
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
 </footer>
 <script>
-	$(document).ready(function(){
-    $('#selectFrom').on('change', function() {
-      if ( this.value == 'Mvd')
-     		{
-        $("#selectTo.1").hide();
-      }
-      else if
-      {
-        $("#").hide();
-      }
-    });
-});
+	
 </script>
 
 
