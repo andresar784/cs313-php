@@ -7,7 +7,7 @@ $('.btn').on('click', function() {
 });
 
 $(document).ready(function(){
-  $("#selectFrom").on(function(){
+  $("#selectFrom").on('change', function(){
     if(selectFrom.val()== "Mvd")
     $("#t1").hide();
   });
