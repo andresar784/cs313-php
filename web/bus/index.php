@@ -48,10 +48,10 @@ $db = DB::init();
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
-        <li><a href="index.php">Products</a></li>
+       
         </ul>
 		<ul class="nav navbar-nav navbar-right">
-	  <li><a href="process.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+	  
 		</ul>
     </div>
   </div>
@@ -105,16 +105,7 @@ $db = DB::init();
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
 </footer>
 
-<script>
-$(document).ready(function(){
-  $('#selectFrom')on.('change', function()){
-		if(value == "Mvd"){
-			$("#t1").hide();
-		}
-	}
-	});
-});
-</script>
+
 
 
 
