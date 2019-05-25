@@ -10,5 +10,6 @@ $(document).ready(function(){
   $("#selectFrom").on('change', function(){
     if(selectFrom.val()== "Mvd")
     $("#t1").hide();
+    alert("You entered p1!");
   });
 });
