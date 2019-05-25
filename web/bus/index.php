@@ -6,11 +6,12 @@ $db = DB::init();
 <html lang="en">
 <head>
   <title>Bus Company</title>
-  <script type="text/javascript" src="js.js"></script>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="style.css" rel="stylesheet">
 
@@ -103,6 +104,20 @@ $db = DB::init();
 <footer class="container-fluid text-center">
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
 </footer>
+
+<script>
+$(document).ready(function(){
+  $('#selectFrom').on('change', function() {
+    var optionSelected = $("option:selected", this);
+    var valueSelected = this.value;
+       if (valueSelected == 'Mvd')
+       {
+      $("#t1").hide();
+    }
+    
+  });
+});
+</script>
 
 
 
