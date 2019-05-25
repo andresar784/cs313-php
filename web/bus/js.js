@@ -8,7 +8,8 @@ $('.btn').on('click', function() {
 
 $(document).ready(function(){
   $('#selectFrom').on('change', function() {
-    if ( this.value == 'Mvd')
+    var optionSelected = $("option:selected", this);
+    if ( optionSelected == 'Mvd')
        {
       $("#t1").hide();
     }
