@@ -7,13 +7,8 @@ $('.btn').on('click', function() {
 });
 
 $(document).ready(function(){
-  $('#selectFrom').on('change', function() {
-    var optionSelected = $("option:selected", this);
-    var valueSelected = this.value;
-       if (valueSelected == 'Mvd')
-       {
-      $("#t1").hide();
-    }
-    
+  $("#selectFrom").on(function(){
+    if(selectFrom.val()== "Mvd")
+    $("#t1").hide();
   });
 });
