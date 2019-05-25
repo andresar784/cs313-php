@@ -9,7 +9,8 @@ $('.btn').on('click', function() {
 $(document).ready(function(){
   $('#selectFrom').on('change', function() {
     var optionSelected = $("option:selected", this);
-    if ( optionSelected === 'Mvd')
+    var valueSelected = this.value;
+       if (valueSelected == 'Mvd')
        {
       $("#t1").hide();
     }
