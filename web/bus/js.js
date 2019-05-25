@@ -8,9 +8,9 @@ $('.btn').on('click', function() {
 
 $(document).ready(function(){
   $("#selectFrom").on('change', function(){
-    var seletVal=$('#selectFrom option:selected').val();
-    if(seletVal == "Mvd")
+       if(value == "Mvd"){
     $("#t1").hide();
+       }
     alert("You entered p1!");
   });
 });
