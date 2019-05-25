@@ -107,15 +107,12 @@ $db = DB::init();
 
 <script>
 $(document).ready(function(){
-  $('#selectFrom').on('change', function() {
-    var optionSelected = $("option:selected", this);
-    var valueSelected = this.value;
-       if (valueSelected == 'Mvd')
-       {
-      $("#t1").hide();
-    }
-    
-  });
+  $('#selectFrom')on.('change', function()){
+		if(value == "Mvd"){
+			$("#t1").hide();
+		}
+	}
+	});
 });
 </script>
 
