@@ -55,7 +55,7 @@ $db = DB::init();
     </div>
   </div>
 </nav>
-<form id="mainForm" action="confirmation.php" method="POST">
+<form action="confirmation.php" method="post">
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
@@ -73,7 +73,7 @@ $db = DB::init();
 		</div>
 		<div class="col-xs-6">
 		<div class="form-group">
-			<label for="exampleFormControlSelect1">To:</label>
+			<label for="exampleFormControlSelect2">To:</label>
 				<select class="form-control" id="selectTo">
 					<option name="to" value="Montevideo" ><?php echo $place_name[1]?></option>
 					<option name="to" value="Durazno"><?php echo $place_name[2]?></option>
