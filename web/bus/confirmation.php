@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,10 @@
   
 </head>
 <body>
+<?php
+$from = $_POST['from'];
+echo $from;
+?> 
 
 <div class="jumbotron">
   <div class="container text-center">
@@ -50,11 +55,7 @@
 		</div>
 		</div>
 		<div class="col-xs-6">
-		<?php
-      echo "<h2>Your Input:</h2>";
-        echo $_POST['$from'];
-
-        ?>
+		
 
 		</div>
 		
