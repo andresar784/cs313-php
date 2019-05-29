@@ -8,10 +8,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="style.css" rel="stylesheet">
+ 
+
   
 </head>
 <body>
-x
 
 <div class="jumbotron">
   <div class="container text-center">
@@ -42,7 +43,7 @@ x
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		<p> You are travelling from: <?php echo $from?> </p>
+		<p> You are travelling from: <?php echo $_POST['$from']?> </p>
     <p> To: <?php echo $to?></p>
 		<p> Total of passengers are: <?php echo $quantity?> </p>
 		<button type="button" class="btn btn-primary btn-lg">Confirm 2/4</button>
