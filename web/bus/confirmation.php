@@ -9,18 +9,6 @@
   
 </head>
 <body>
-<?php
-	$statement = $db->prepare("SELECT id, place_name FROM place");
-	$statement->execute();
-	$place_name = array();
-	while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-		$place_name[$row['id']] = $row['place_name'];
-	}
-	
-	
-
-?>
-
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
@@ -40,10 +28,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
-        <li><a href="index.php">Products</a></li>
         </ul>
 		<ul class="nav navbar-nav navbar-right">
-	  <li><a href="process.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
 		</ul>
     </div>
   </div>
@@ -54,7 +40,7 @@
 		<div class="col-xs-6">
 		<p> You are travelling from: <span ></span></p> To: <span></span></p>
 		<p> Total of passengers are: <span></span></p>
-		<button type="button" class="btn btn-primary btn-lg" id="load" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing Order">Confirm 2/5</button>
+		<button type="button" class="btn btn-primary btn-lg">Confirm 2/5</button>
 		</div>
 		</div>
 		<div class="col-xs-6">
