@@ -95,10 +95,10 @@ $db = DB::init();
 				</select>
 		</div>
 		</div>
-		<button type="submit" class="btn btn-primary btn-lg" id="load" 
-		data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing Order">Confirm</button>
-	</form>
 	</div>
+	<button type="submit" class="btn btn-primary btn-lg" id="load" 
+		data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing Order">Confirm</button>
+		</form>
 	</div>
 	
 
