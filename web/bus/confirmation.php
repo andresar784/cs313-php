@@ -14,10 +14,7 @@
   
 </head>
 <body>
-<?php
-$from = $_POST['from'];
-echo $from;
-?> 
+
 
 <div class="jumbotron">
   <div class="container text-center">
