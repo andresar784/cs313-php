@@ -11,22 +11,7 @@
   
 </head>
 <body>
-<?php
-$from = $to = $quantity = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $from = test_input($_POST["from"]);
-  $to = test_input($_POST["to"]);
-  $quantity = test_input($_POST["quantity"])
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
+x
 
 <div class="jumbotron">
   <div class="container text-center">
