@@ -13,6 +13,7 @@
 <body>
 <?php
 $from = $to = $quantity = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $from = test_input($_POST["from"]);
   $to = test_input($_POST["to"]);
@@ -56,9 +57,9 @@ function test_input($data) {
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		<p> You are travelling from: <?php echo $from?> </p>
-    <p> To: <?php echo $to?></p>
-		<p> Total of passengers are: <?php echo $quantity?> </p>
+		<p> You are travelling from: <?php echo $from;?> </p>
+    <p> To: <?php echo $to;?></p>
+		<p> Total of passengers are: <?php echo $quantity;?> </p>
 		<button type="button" class="btn btn-primary btn-lg">Confirm 2/4</button>
 		</div>
 		</div>
