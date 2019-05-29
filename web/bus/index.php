@@ -62,7 +62,7 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">From:</label>
 			<select class="form-control" id="selectFrom">
-					<option name="from" value="Montevideo"><?php echo $place_name[1]?></option>
+					<option name="from" value="Montevideo" selected><?php echo $place_name[1]?></option>
 					<option name="from" value="Durazno"><?php echo $place_name[2]?></option>
 					<option name="from" value="Paso de los Toros"><?php echo $place_name[3]?></option>
 					<option name="from" value="Tacuarembo"><?php echo $place_name[4]?></option>
@@ -79,7 +79,7 @@ $db = DB::init();
 					<option name="to" value="Durazno"><?php echo $place_name[2]?></option>
 					<option name="to" value="Paso de los Toros"><?php echo $place_name[3]?></option>
 					<option name="to" value="Tacuarembo"><?php echo $place_name[4]?></option>
-					<option name="to" value="Rivera"><?php echo $place_name[5]?></option>
+					<option name="to" value="Rivera" selected><?php echo $place_name[5]?></option>
 			</select>
 		</div>
 		</div>
@@ -99,8 +99,7 @@ $db = DB::init();
 	</div>
 	
 	</div>
-
-		</form>
+	</form>
 
 <footer class="container-fluid text-center">
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
