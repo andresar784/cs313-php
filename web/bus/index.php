@@ -87,11 +87,11 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">How many tickets:</label>
 				<select class="form-control" id="exampleFormControlSelect2">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
+					<option name="quantity" value="1">1</option>
+					<option name="quantity" value="2">2</option>
+					<option name="quantity" value="3">3</option>
+					<option name="quantity" value="4">4</option>
+					<option name="quantity" value="5">5</option>
 				</select>
 		</div>
 	</div>
