@@ -11,6 +11,21 @@
   
 </head>
 <body>
+<?php
+$from = $to = $quantity = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $from = test_input($_POST["from"]);
+  $to = test_input($_POST["to"]);
+  $quantity = test_input($_POST["quantity"])
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
 
 <div class="jumbotron">
   <div class="container text-center">
@@ -41,9 +56,9 @@
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		<p> You are travelling from: <?php echo $_POST['from']?></p>
-    <p> To: <?php echo $_POST['to']?></p>
-		<p> Total of passengers are: </p>
+		<p> You are travelling from: <?php echo $from?> </p>
+    <p> To: <?php echo $to?></p>
+		<p> Total of passengers are: <?php echo $quantity?> </p>
 		<button type="button" class="btn btn-primary btn-lg">Confirm 2/4</button>
 		</div>
 		</div>
