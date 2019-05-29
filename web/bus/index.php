@@ -61,7 +61,7 @@ $db = DB::init();
 		<div class="col-xs-6">
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">From:</label>
-			<select class="form-control">
+			<select>
 					<option name="from" value="Montevideo"><?php echo $place_name[1]?></option>
 					<option name="from" value="Durazno"><?php echo $place_name[2]?></option>
 					<option name="from" value="Paso de los Toros"><?php echo $place_name[3]?></option>
