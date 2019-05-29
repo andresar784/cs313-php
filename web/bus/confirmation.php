@@ -1,5 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Bus Company</title>
+  <title>Bus Company Confirmation</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -9,6 +11,7 @@
   
 </head>
 <body>
+
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
@@ -38,9 +41,10 @@
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		<p> You are travelling from: <span ></span></p> To: <span></span></p>
-		<p> Total of passengers are: <span></span></p>
-		<button type="button" class="btn btn-primary btn-lg">Confirm 2/5</button>
+		<p> You are travelling from: <?php echo $_POST['from']?></p>
+    <p> To: <?php echo $_POST['to']?></p>
+		<p> Total of passengers are: </p>
+		<button type="button" class="btn btn-primary btn-lg">Confirm 2/4</button>
 		</div>
 		</div>
 		<div class="col-xs-6">
