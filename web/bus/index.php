@@ -55,7 +55,7 @@ $db = DB::init();
     </div>
   </div>
 </nav>
-
+<form id="mainForm" action="confirmation.php" method="POST">
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
@@ -95,7 +95,9 @@ $db = DB::init();
 				</select>
 		</div>
 		</div>
-
+		<button type="submit" class="btn btn-primary btn-lg" id="load" 
+		data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing Order">Confirm</button>
+	</form>
 	</div>
 	</div>
 	
