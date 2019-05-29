@@ -98,8 +98,7 @@ $db = DB::init();
 	</div>
 	
 	</div>
-	<button type="submit" class="btn btn-primary btn-lg" id="load" 
-		data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing Order">Confirm</button>
+	<button type="submit" class="btn btn-primary btn-lg">Confirm</button>
 		</form>
 
 <footer class="container-fluid text-center">
