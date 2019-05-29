@@ -50,7 +50,10 @@
 		</div>
 		</div>
 		<div class="col-xs-6">
-		
+		<?php
+      echo "<h2>Your Input:</h2>";
+        echo $_POST['$from'];
+
 		</div>
 		
 	</div>
