@@ -62,11 +62,11 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">From:</label>
 			<select class="form-control" id="selectFrom">
-					<option value="Mvd"><?php echo $place_name[1]?></option>
-					<option value="Dur"><?php echo $place_name[2]?></option>
-					<option value="Ptr"><?php echo $place_name[3]?></option>
-					<option value="Tbo"><?php echo $place_name[4]?></option>
-					<option value="Rvr"><?php echo $place_name[5]?></option>
+					<option name="from" value="Montevideo"><?php echo $place_name[1]?></option>
+					<option name="from" value="Durazno"><?php echo $place_name[2]?></option>
+					<option name="from" value="Paso de los Toros"><?php echo $place_name[3]?></option>
+					<option name="from" value="Tacuarembo"><?php echo $place_name[4]?></option>
+					<option name="from" value="Rivera"><?php echo $place_name[5]?></option>
 				</select>
 
 		</div>
@@ -75,11 +75,11 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">To:</label>
 				<select class="form-control" id="selectTo">
-					<option id="t1" ><?php echo $place_name[1]?></option>
-					<option id="t2"><?php echo $place_name[2]?></option>
-					<option id="t3"><?php echo $place_name[3]?></option>
-					<option id="t4"><?php echo $place_name[4]?></option>
-					<option id="t5"><?php echo $place_name[5]?></option>
+					<option name="to" value="Montevideo" ><?php echo $place_name[1]?></option>
+					<option name="to" value="Durazno"><?php echo $place_name[2]?></option>
+					<option name="to" value="Paso de los Toros"><?php echo $place_name[3]?></option>
+					<option name="to" value="Tacuarembo"><?php echo $place_name[4]?></option>
+					<option name="to" value="Rivera"><?php echo $place_name[5]?></option>
 			</select>
 		</div>
 		</div>
