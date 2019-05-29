@@ -94,11 +94,12 @@ $db = DB::init();
 					<option>5</option>
 				</select>
 		</div>
+		<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 		</div>
 	</div>
 	
 	</div>
-	<button type="submit" class="btn btn-primary btn-lg">Confirm</button>
+
 		</form>
 
 <footer class="container-fluid text-center">
