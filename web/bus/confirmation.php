@@ -45,9 +45,9 @@
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		<p> You are travelling from: <?php echo $_POST['from']?> </p>
-    <p> To: <?php echo $to?></p>
-		<p> Total of passengers are: <?php echo $quantity?> </p>
+		<p> You are travelling from: <?php echo $_POST["from"];?> </p>
+    <p> To: <?php echo $_POST["to"];?></p>
+		<p> Total of passengers are: <?php echo $_POST["quantity"];?> </p>
 		<button type="button" class="btn btn-primary btn-lg">Confirm 2/4</button>
 		</div>
 		</div>
