@@ -65,16 +65,12 @@ session_start();
 		</div>
 		</div>
     <div class="col-xs-6">
-    
-		
-
+    </div>
 		</div>
-		
-	</div>
  </div><br><br>
 
 <footer class="container-fluid text-center">
-  <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>  
+  <p>Bus Star Copyright 2018 - <?php echo date(Y)?></p>  
 </footer>
 
 </body>

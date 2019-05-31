@@ -60,7 +60,7 @@ session_start();
  </div><br><br>
 
 <footer class="container-fluid text-center">
-  <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>  
+  <p>Bus Star Copyright 2018 - <?php echo date(Y)?></p>  
 </footer>
 
 </body>
