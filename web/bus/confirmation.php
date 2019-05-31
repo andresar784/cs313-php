@@ -57,7 +57,7 @@ session_start();
     <?php
     var_dump(isset($from));?>
     <?php echo $from;?>
-		<p> You are travelling from: <?php echo $from;?> </p>
+		<p> You are travelling from: <?php echo $from?> </p>
     <p> To: <?php echo $to;?></p>
 		<p> Total of passengers are: <?php echo $quantity;?> </p>
 		<button type="button" class="btn btn-primary btn-lg">Confirm 2/4</button>
@@ -71,7 +71,7 @@ session_start();
 		
 	</div>
  </div><br><br>
- <p> You are travelling from: <?php echo $from;?> </p>
+
 <footer class="container-fluid text-center">
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>  
 </footer>
