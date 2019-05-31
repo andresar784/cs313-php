@@ -17,12 +17,11 @@ session_start();
 </head>
 <body>
 <?php
-  $from = $to = $quantity = "5";
-	if($_SERVER['REQUEST_METHOD'] == '$_POST'){
-		$from = $_POST["from"];
-		$to = $_POST["to"];
-		$quantity = $_POST["quantity"];
-}
+  $from = $to = $quantity = "";
+  $from = $_POST["from"];
+	$to = $_POST["to"];
+	$quantity = $_POST["quantity"];
+
 ?>
 
 <div class="jumbotron">
