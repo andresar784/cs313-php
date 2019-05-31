@@ -76,24 +76,24 @@ session_start();
 		<div class="col-xs-6">
 		<div class="form-group">
 			<label >To:</label>
-				<select class="form-control">
-					<option name="to" value="Montevideo" ><?php echo $place_name[1]?></option>
-					<option name="to" value="Durazno"><?php echo $place_name[2]?></option>
-					<option name="to" value="Paso de los Toros"><?php echo $place_name[3]?></option>
-					<option name="to" value="Tacuarembo"><?php echo $place_name[4]?></option>
-					<option name="to" value="Rivera" ><?php echo $place_name[5]?></option>
+				<select name="to" class="form-control">
+					<option value="Montevideo" ><?php echo $place_name[1]?></option>
+					<option value="Durazno"><?php echo $place_name[2]?></option>
+					<option value="Paso de los Toros"><?php echo $place_name[3]?></option>
+					<option value="Tacuarembo"><?php echo $place_name[4]?></option>
+					<option value="Rivera" ><?php echo $place_name[5]?></option>
 			</select>
 		</div>
 		</div>
 		<div class="col-xs-2">
 		<div class="form-group">
 			<label>How many tickets:</label>
-				<select class="form-control" id="exampleFormControlSelect2">
-					<option name="quantity" value="1">1</option>
-					<option name="quantity" value="2">2</option>
-					<option name="quantity" value="3">3</option>
-					<option name="quantity" value="4">4</option>
-					<option name="quantity" value="5">5</option>
+				<select class="form-control" name="quantity">
+					<option  value="1">1</option>
+					<option  value="2">2</option>
+					<option  value="3">3</option>
+					<option  value="4">4</option>
+					<option  value="5">5</option>
 				</select>
 		</div>
 	</div>
