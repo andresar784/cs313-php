@@ -104,7 +104,7 @@ session_start();
 	</form>
 
 <footer class="container-fluid text-center">
-  <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>
+  <p>Bus Star Copyright 2018 - <?php echo date(Y)?></p>
 </footer>
 
 
