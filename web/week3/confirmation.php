@@ -56,9 +56,6 @@ session_start();
 			$address = htmlspecialchars($_POST["address"]);
 			$city = htmlspecialchars($_POST["city"]);
 			$state = htmlspecialchars($_POST["state"]);
-			
-			
-			 
 			?>
 			<br/>
 			<p>Shipping Address:</p>
