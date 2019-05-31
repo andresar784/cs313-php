@@ -71,7 +71,7 @@ session_start();
 		
 	</div>
  </div><br><br>
-
+ <p> You are travelling from: <?php echo $from;?> </p>
 <footer class="container-fluid text-center">
   <p>Online Store Copyright 2018 - <?php echo date(Y)?></p>  
 </footer>
