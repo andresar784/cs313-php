@@ -59,8 +59,9 @@ session_start();
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
-    <button type="submit" href="process.php" class="btn btn-primary btn-lg">Confirm 2/4</button>
-
+    <form action="process.php">
+    <button type="submit" class="btn btn-primary btn-lg">Confirm 2/4</button>
+    <form>
 		</div>
 		</div>
     <div class="col-xs-6">
