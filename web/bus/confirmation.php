@@ -53,10 +53,12 @@ session_start();
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		<dt> You are travelling from: <?php echo $from?> </dt>
-    <dt> To: <?php echo $to;?></dt>
-		<dt> Total of passengers are: <?php echo $quantity;?> </dt>
-    <button  class="btn btn-primary btn-lg" href="index.php">Return</button>
+		<dt> You are travelling from: <?php echo $from?> </dt><br>
+    <dt> To: <?php echo $to;?></dt><br>
+		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
+    <form action="index.php">
+    <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
+    </form>
     <button type="submit" href="process.php" class="btn btn-primary btn-lg">Confirm 2/4</button>
 
 		</div>
