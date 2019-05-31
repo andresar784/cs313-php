@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,6 +56,7 @@
 		<div class="col-xs-6">
     <?php
     var_dump(empty($from));?>
+    <?php gettype($from);?>
     <?php echo $from;?>
 		<p> You are travelling from: <?php echo $from;?> </p>
     <p> To: <?php echo $to;?></p>
