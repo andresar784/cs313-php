@@ -15,6 +15,7 @@
 </head>
 <body>
 <?php
+  $from = $to = $quantity = "";
 	if($_SERVER['REQUEST_METHOD'] == '$_POST'){
 		$from = $_POST["from"];
 		$to = $_POST["to"];
