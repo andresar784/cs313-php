@@ -55,8 +55,7 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     <?php
-    var_dump(empty($from));?>
-    <?php gettype($from);?>
+    var_dump(isset($from));?>
     <?php echo $from;?>
 		<p> You are travelling from: <?php echo $from;?> </p>
     <p> To: <?php echo $to;?></p>
