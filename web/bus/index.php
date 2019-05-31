@@ -62,7 +62,7 @@ $db = DB::init();
 		<div class="form-group">
 			<label for="exampleFormControlSelect1">From:</label>
 			<select  class="form-control">
-					<option name="from" <?php if (isset($from) && $from=="Montevideo") echo "checked";?>  value="Montevideo"><?php echo $place_name[1]?></option>
+					<option name="from" <?php if (isset($from) && $from=="Montevideo") echo "checked";?>  value='Montevideo'><?php echo $place_name[1]?></option>
 					<option name="from" <?php if (isset($from) && $from=="Durazno") echo "checked";?> value="Durazno"><?php echo $place_name[2]?></option>
 					<option name="from" <?php if (isset($from) && $from=="Paso de los Toros") echo "checked";?> value="Paso de los Toros"><?php echo $place_name[3]?></option>
 					<option name="from" <?php if (isset($from) && $from=="Tacuarembo") echo "checked";?>value="Tacuarembo"><?php echo $place_name[4]?></option>
