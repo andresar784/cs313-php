@@ -53,7 +53,7 @@ session_start();
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		<p> You are travelling from: <?php echo $from?> </p>
+		<dt> You are travelling from: <?php echo $from?> </dt>
     <p> To: <?php echo $to;?></p>
 		<p> Total of passengers are: <?php echo $quantity;?> </p>
 		<button type="submit" href="process.php" class="btn btn-primary btn-lg">Confirm 2/4</button>
