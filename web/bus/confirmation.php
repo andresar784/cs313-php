@@ -54,6 +54,7 @@
 		<div class="col-xs-6">
     <?php
     var_dump(isset($quantity));?>
+    <?php echo $from;?>
 		<p> You are travelling from: <?php echo $from;?> </p>
     <p> To: <?php echo $to;?></p>
 		<p> Total of passengers are: <?php echo $quantity;?> </p>
