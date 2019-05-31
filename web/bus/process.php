@@ -48,7 +48,7 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     
-		<button type="button" class="btn btn-primary btn-lg">Confirm 2/4</button>
+		<button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
 		</div>
 		</div>
     <div class="col-xs-6">
