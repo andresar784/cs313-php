@@ -47,7 +47,7 @@ session_start();
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-        <div class="container">
+        
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
@@ -73,11 +73,11 @@ session_start();
               <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
               <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
             </form>
-          </div>
+          
         </div>
       </div>
     </div>
-  </div> 
+  </div> /*End of the form*/
     <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
 		</div>
 		</div>
