@@ -58,7 +58,8 @@ $quantity = $_POST["quantity"];
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-    var_dump(isset($from));
+    <?php
+    var_dump(isset($from));?>
 		<p> You are travelling from: <?php echo $from;?> </p>
     <p> To: <?php echo $to;?></p>
 		<p> Total of passengers are: <?php echo $quantity;?> </p>
