@@ -22,13 +22,7 @@
 		$quantity = $_POST["quantity"];
 }
 ?>
-<?php
 
-$from = $_POST["from"];
-$to = $_POST["to"];
-$quantity = $_POST["quantity"];
-
-?>
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
