@@ -53,8 +53,6 @@ session_start();
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-    
-    <?php echo $from;?>
 		<p> You are travelling from: <?php echo $from?> </p>
     <p> To: <?php echo $to;?></p>
 		<p> Total of passengers are: <?php echo $quantity;?> </p>
