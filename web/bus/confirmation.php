@@ -54,8 +54,8 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
 		<dt> You are travelling from: <?php echo $from?> </dt>
-    <p> To: <?php echo $to;?></p>
-		<p> Total of passengers are: <?php echo $quantity;?> </p>
+    <dt> To: <?php echo $to;?></dt>
+		<dt> Total of passengers are: <?php echo $quantity;?> </dt>
 		<button type="submit" href="process.php" class="btn btn-primary btn-lg">Confirm 2/4</button>
 		</div>
 		</div>
