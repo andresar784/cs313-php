@@ -21,7 +21,7 @@ session_start();
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
-    <h3>Your dates here</h3>      
+    <h3>Fill all the field with the requested info</h3>      
     </div>
 </div>
 <nav class="navbar navbar-inverse">
@@ -47,8 +47,7 @@ session_start();
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-    
-		<button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
+    <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
 		</div>
 		</div>
     <div class="col-xs-6">
