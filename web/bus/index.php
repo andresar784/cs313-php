@@ -1,6 +1,8 @@
 <?php
 require_once('bd.php');
 $db = DB::init();
+
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,13 +62,13 @@ $db = DB::init();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
 		<div class="form-group">
-			<label for="exampleFormControlSelect1">From:</label>
+			<label>From:</label>
 			<select  class="form-control">
-					<option name="from" <?php if (isset($from) && $from=="Montevideo");?>  value="Montevideo"><?php echo $place_name[1]?></option>
-					<option name="from" <?php if (isset($from) && $from=="Durazno");?> value="Durazno"><?php echo $place_name[2]?></option>
-					<option name="from" <?php if (isset($from) && $from=="Paso de los Toros") ;?> value="Paso de los Toros"><?php echo $place_name[3]?></option>
-					<option name="from" <?php if (isset($from) && $from=="Tacuarembo") ;?>value="Tacuarembo"><?php echo $place_name[4]?></option>
-					<option name="from" <?php if (isset($from) && $from=="Rivera") ;?>value="Rivera"><?php echo $place_name[5]?></option>
+					<option name="from" value="Montevideo"><?php echo $place_name[1]?></option>
+					<option name="from" value="Durazno"><?php echo $place_name[2]?></option>
+					<option name="from" value="Paso de los Toros"><?php echo $place_name[3]?></option>
+					<option name="from" value="Tacuarembo"><?php echo $place_name[4]?></option>
+					<option name="from" value="Rivera"><?php echo $place_name[5]?></option>
 				</select>
 
 		</div>
