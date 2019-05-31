@@ -6,11 +6,5 @@ $('.btn').on('click', function() {
    }, 8000);
 });
 
-$(document).ready(function(){
-  $("#selectFrom").on('change', function(){
-       if(value == "Mvd"){
-    $("#t1").hide();
-       }
-    alert("You entered p1!");
-  });
-});
+
+ 
