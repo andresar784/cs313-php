@@ -75,7 +75,7 @@ session_start();
 		</div>
 		<div class="col-xs-6">
 		<div class="form-group">
-			<label for="exampleFormControlSelect2">To:</label>
+			<label >To:</label>
 				<select class="form-control">
 					<option name="to" value="Montevideo" ><?php echo $place_name[1]?></option>
 					<option name="to" value="Durazno"><?php echo $place_name[2]?></option>
@@ -87,7 +87,7 @@ session_start();
 		</div>
 		<div class="col-xs-2">
 		<div class="form-group">
-			<label for="exampleFormControlSelect1">How many tickets:</label>
+			<label>How many tickets:</label>
 				<select class="form-control" id="exampleFormControlSelect2">
 					<option name="quantity" value="1">1</option>
 					<option name="quantity" value="2">2</option>
