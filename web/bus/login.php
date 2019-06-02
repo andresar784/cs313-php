@@ -47,7 +47,14 @@ session_start();
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-        
+    <form>
+        User name:<br>
+        <input type="text" name="userid">
+        <br>
+        User password:<br>
+        <input type="password" name="psw">
+    </form>
+   
     
     <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
 		</div>
