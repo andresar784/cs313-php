@@ -47,8 +47,11 @@ session_start();
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-    <dt>Login</dt>
-    <dt>Register</dt>
+    <dt>Login:</dt><br>
+    <button type="submit" class="btn btn-primary btn-lg">Login</button>
+    <dt>Register:</dt><br>
+    <button type="submit" class="btn btn-primary btn-lg">Register</button>
+    <br>
     <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
 		</div>
 		</div>
