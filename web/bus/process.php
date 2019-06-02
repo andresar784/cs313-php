@@ -48,9 +48,9 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     <dt>Login:</dt><br>
-    <button type="submit" class="btn btn-primary btn-lg">Login</button>
+    <button type="submit" class="btn btn-primary btn-lg">Login</button><br>
     <dt>Register:</dt><br>
-    <button type="submit" class="btn btn-primary btn-lg">Register</button>
+    <button type="submit" class="btn btn-primary btn-lg">Register</button><br>
     <br>
     <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
 		</div>
