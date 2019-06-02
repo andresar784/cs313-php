@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bus Company Process</title>
+  <title>Bus Company Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -48,8 +48,8 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     <form>
-        User name:<br>
-        <input type="text" name="userid">
+        Email<br>
+        <input type="email" name="useremail">
         <br>
         User password:<br>
         <input type="password" name="psw">
