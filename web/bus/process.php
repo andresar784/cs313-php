@@ -49,7 +49,7 @@ session_start();
 		<div class="col-xs-6">
     <dt>Login:</dt><br>
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" 
-      class="btn btn-primary btn-lg">Login</button><br><br>
+      >Login</button><br><br>
       <div id="id01" class="modal">
   
       <form class="modal-content animate" action="/action_page.php">
