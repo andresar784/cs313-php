@@ -55,12 +55,13 @@ session_start();
         User password:<br>
         <input type="password" name="psw">
     </form>
-    </div>
+   
    
     <br>
     <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
 		</div>
 		</div>
+    </div>
     <div class="col-xs-6">
     </div>
 		
