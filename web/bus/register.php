@@ -19,54 +19,7 @@ session_start();
 
 </head>
 <body>
-<?php
-    try{
-
-      //pasted from another script
-    $firstname = $lastname = $phone = $age = $address = $email = $pw = "";
-
-    $firstname = test_input($_POST['firstname']);
-    $lastname = test_input($_POST['lastname']);
-    $phone = test_input($_POST['phone']);
-    $age = test_input($_POST['age']);
-    $address = test_input($_POST['address']);
-    $email = test_input($_POST['email']);
-    $pw = test_input($_POST['pw']);
-
-    //hash the password
-    $password = password_hash($pw);
-
-    function test_input($data) {
-      $data = trim($data);
-      $data = stripslashes($data);
-      $data = htmlspecialchars($data);
-       return $data;
-    }
-    
-    //add the values to the bususer table
-    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
-    $statement = $db->prepare($query);
-
-    // Now we bind the values to the placeholders. This does some nice things
-    // including sanitizing the input with regard to sql commands.
-    $statement->bindValue(':lastname', $lastname);
-    $statement->bindValue(':firstname', $firstname);
-    $statement->bindValue(':phone', $phone);
-    $statement->bindValue(':age', $age);
-    $statement->bindValue(':address', $address);
-    $statement->bindValue(':email', $email);
-    $statement->bindValue(':password', $password);
-
-    $statement->execute();
-    }
-    catch (Exception $ex)
-    {           
-    // Please be aware that you don't want to output the Exception message in
-    // a production environment
-    echo "Error with DB. Details: $ex";
-    die();
-    }
-?>    
+   
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
@@ -112,6 +65,60 @@ session_start();
 </div>
 <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 </form>
+
+<?php
+
+  //pasted from another script
+  $firstname = $lastname = $phone = $age = $address = $email = $pw = "";
+
+  $firstname = test_input($_POST['firstname']);
+  $lastname = test_input($_POST['lastname']);
+  $phone = test_input($_POST['phone']);
+  $age = test_input($_POST['age']);
+  $address = test_input($_POST['address']);
+  $email = test_input($_POST['email']);
+  $pw = test_input($_POST['pw']);
+
+  //hash the password
+  $password = password_hash($pw);
+
+  function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+     return $data;
+  }
+  
+  ?>
+
+<?php
+    try{
+
+    
+    //add the values to the bususer table
+    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
+    $statement = $db->prepare($query);
+
+    // Now we bind the values to the placeholders. This does some nice things
+    // including sanitizing the input with regard to sql commands.
+    $statement->bindValue(':lastname', $lastname);
+    $statement->bindValue(':firstname', $firstname);
+    $statement->bindValue(':phone', $phone);
+    $statement->bindValue(':age', $age);
+    $statement->bindValue(':address', $address);
+    $statement->bindValue(':email', $email);
+    $statement->bindValue(':password', $password);
+
+    $statement->execute();
+    }
+    catch (Exception $ex)
+    {           
+    // Please be aware that you don't want to output the Exception message in
+    // a production environment
+    echo "Error with DB. Details: $ex";
+    die();
+    }
+?> 
 
 	
 	
