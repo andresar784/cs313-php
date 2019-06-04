@@ -100,6 +100,7 @@ function test_input($data) {
     $statement->bindValue(':age', $age);
     $statement->bindValue(':address', $address);
     $statement->bindValue(':email', $email);
+    $statement->bindValue(':password', $pw);
     
 
     $statement->execute();
