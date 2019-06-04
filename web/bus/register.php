@@ -94,7 +94,7 @@ function test_input($data) {
 
     // Now we bind the values to the placeholders. This does some nice things
     // including sanitizing the input with regard to sql commands.
-    $statement->bindValue(':lastname', $sName);
+    //$statement->bindValue(':lastname', $sName);
     $statement->bindValue(':firstname', $fName);
     $statement->bindValue(':phone', $phone);
     $statement->bindValue(':age', $age);
