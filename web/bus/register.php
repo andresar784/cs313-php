@@ -60,16 +60,24 @@ session_start();
                 <dt>Password: <input type="text" name="pw" required></dt>
                 <input type="submit">
             </div>
-		</div>
-    </div>
-</div>
+	
 <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 </form>
 
-<?php
 
-  //pasted from another script
-  $firstname = $lastname = $phone = $age = $address = $email = $pw = "";
+
+  
+
+<?php
+    try{
+
+    
+    //add the values to the bususer table
+    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
+    $statement = $db->prepare($query);
+
+    //pasted from another script
+     $firstname = $lastname = $phone = $age = $address = $email = $pw = "";
 
   $firstname = test_input($_POST['firstname']);
   $lastname = test_input($_POST['lastname']);
@@ -89,17 +97,7 @@ session_start();
      return $data;
   }
   
-  ?>
-
-<?php
-    try{
-
-    
-    //add the values to the bususer table
-    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
-    $statement = $db->prepare($query);
-
-    // Now we bind the values to the placeholders. This does some nice things
+      // Now we bind the values to the placeholders. This does some nice things
     // including sanitizing the input with regard to sql commands.
     $statement->bindValue(':lastname', $lastname);
     $statement->bindValue(':firstname', $firstname);
@@ -119,7 +117,9 @@ session_start();
     die();
     }
 ?> 
-
+	</div>
+    </div>
+</div>
 	
 	
 
