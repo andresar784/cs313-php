@@ -103,9 +103,30 @@ function test_input($data) {
     $statement->bindValue(':address', $address);
     $statement->bindValue(':email', $email);
     $statement->bindValue(':password', $password);
+
+    //pasted from another script
+    $firstname = $lastname = $phone = $age = $address = $email = $pw = "";
+
+    $firstname = test_input($_POST['firstname']);
+    $lastname = test_input($_POST['lastname']);
+    $phone = test_input($_POST['phone']);
+    $age = test_input($_POST['age']);
+    $address = test_input($_POST['address']);
+    $email = test_input($_POST['email']);
+    $pw = test_input($_POST['pw']);
+
+    //hash the password
+    $password = password_hash($pw);
+
+    function test_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+       return $data;
+    }
     
 
-    $statement->execute($query);
+    $statement->execute();
     }
     catch (Exception $ex)
     {           
