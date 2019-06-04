@@ -22,7 +22,7 @@ session_start();
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
-    <h3>Complete with yhe required data</h3>
+    <h3>Complete with the required data</h3>
     </div>
 </div>
 <nav class="navbar navbar-inverse">
@@ -49,25 +49,14 @@ session_start();
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		<div class="form-group">
-			
-		</div>
-		</div>
-		<div class="col-xs-6">
-		<div class="form-group">
-			
-		</div>
-		</div>
-		<div class="col-xs-2">
-		<div class="form-group">
-			
+		    <div class="form-group">
+            </div>
 		</div>
 	</div>
-	<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
-	</div>
+</div>
+<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 	
-	</div>
-	</form>
+	
 
 <footer class="container-fluid text-center">
   <p>Bus Star Copyright 2018 - <?php echo date(Y)?></p>
