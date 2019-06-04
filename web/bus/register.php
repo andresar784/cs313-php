@@ -82,11 +82,6 @@ echo $password;<br>
 echo $address;<br>
 
 var_dump($lastname);
-var_dump($firstname);
-var_dump($age);
-var_dump($address);
-var_dump($email);
-var_dump($password);
 
 ?>
 
