@@ -63,10 +63,15 @@ session_start();
 	
 <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 </form>
+<?php
 
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+echo $firstname;
+echo $lastname;
+var_dump($lastname);
 
-
-  
+?>
 
 <?php
     try{
