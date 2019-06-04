@@ -45,25 +45,72 @@ session_start();
     </div>
   </div>
 </nav>
-
+<form method="POST" action="?">
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
 		    <div class="form-group">
-            <form>
                 <dt>Name: <input type="text" name="fName" required></dt>
                 <dt>Surname: <input type="text" name="sName" required></dt>
-                <dt>Phone: <input type="text" name="phone" reuqired></dt>
+                <dt>Phone: <input type="text" name="phone" required></dt>
                 <dt>Age: <input type="text" name="age" required></dt>
                 <dt>Address: <input type="text" name="address" required></dt>
                 <dt>Email <input type="email" name="email" required></dt>
                 <dt>Password: <input type="text" name="pw" required></dt>
+                
             </div>
 		</div>
-        <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
-	</div>
+    </div>
 </div>
+<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
+</form>
+<?php
+$fName = $sName = $phone = $age = $address = $email = $pw = "";
 
+$fName = test_input($_POST['fName']);
+$sName = test_input($_POST['sName']);
+$phone = test_input($_POST['phone']);
+$age = test_input($_POST['age']);
+$address = test_input($_POST['addres']);
+$email = test_input($_POST['email']);
+$pw = test_input($_POST['pw']);
+
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+
+?>
+
+<?php
+    try{
+    //hash the password
+    $hashed = password_hash($pw);
+    //add the values to the bususer table
+    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:sName, :fName, :phone, :age, :address, :email, :hashed)';
+    $statement = $db->prepare($query);
+
+    // Now we bind the values to the placeholders. This does some nice things
+    // including sanitizing the input with regard to sql commands.
+    $statement->bindValue('lastname', $sName);
+    $statement->bindValue(':firstname', $fName);
+    $statement->bindValue(':phone', $phone);
+    $statement->bindValue(':age', $age);
+    $statement->bindValue(':address', $address);
+    $statement->bindValue(':email', $email);
+
+    $statement->execute();
+    }
+    catch (Exception $ex)
+    {           
+    // Please be aware that you don't want to output the Exception message in
+    // a production environment
+    echo "Error with DB. Details: $ex";
+    die();
+    }
+    ?>    
 	
 	
 
