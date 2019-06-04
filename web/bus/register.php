@@ -50,8 +50,8 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
 		    <div class="form-group">
-                <dt>Name: <input type="text" name="fName" required></dt>
-                <dt>Surname: <input type="text" name="sName" required></dt>
+                <dt>Name: <input type="text" name="firstname" required></dt>
+                <dt>Surname: <input type="text" name="lastname" required></dt>
                 <dt>Phone: <input type="text" name="phone" required></dt>
                 <dt>Age: <input type="text" name="age" required></dt>
                 <dt>Address: <input type="text" name="address" required></dt>
@@ -65,10 +65,10 @@ session_start();
 <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 </form>
 <?php
-$fName = $sName = $phone = $age = $address = $email = $pw = "";
+$firstname = $lastname = $phone = $age = $address = $email = $pw = "";
 
-$fName = test_input($_POST['fName']);
-$sName = test_input($_POST['sName']);
+$firstname = test_input($_POST['firstname']);
+$lastname = test_input($_POST['lastname']);
 $phone = test_input($_POST['phone']);
 $age = test_input($_POST['age']);
 $address = test_input($_POST['addres']);
@@ -89,13 +89,13 @@ function test_input($data) {
     //hash the password
     $hashed = password_hash($pw);
     //add the values to the bususer table
-    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:sName, :fName, :phone, :age, :address, :email, :hashed)';
+    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :hashed)';
     $statement = $db->prepare($query);
 
     // Now we bind the values to the placeholders. This does some nice things
     // including sanitizing the input with regard to sql commands.
-    //$statement->bindValue(':lastname', $sName);
-    $statement->bindValue(':firstname', $fName);
+    $statement->bindValue(':lastname', $lastname);
+    $statement->bindValue(':firstname', $firstname);
     $statement->bindValue(':phone', $phone);
     $statement->bindValue(':age', $age);
     $statement->bindValue(':address', $address);
