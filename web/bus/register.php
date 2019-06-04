@@ -57,7 +57,7 @@ session_start();
                 <dt>Address: <input type="text" name="address" required></dt>
                 <dt>Email <input type="email" name="email" required></dt>
                 <dt>Password: <input type="text" name="pw" required></dt>
-                
+                <input type="submit">
             </div>
 		</div>
     </div>
@@ -114,10 +114,12 @@ session_start();
     echo "Error with DB. Details: $ex";
     die();
     }
-    ?>    
+?>    
 	
 	
 
 <footer class="container-fluid text-center">
   <p>Bus Star Copyright 2018 - <?php echo date(Y)?></p>
 </footer>
+</body>
+</html>
