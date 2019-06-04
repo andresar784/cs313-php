@@ -63,13 +63,30 @@ session_start();
 	
 <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 </form>
+
+
 <?php
 
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
-echo $firstname;
-echo $lastname;
+$age = $_POST['age'];
+$address = $_POST['address'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$password = $_POST['pw'];
+echo $firstname;<br>
+echo $lastname;<br>
+echo $age;<br>
+echo $email;<br>
+echo $password;<br>
+echo $address;<br>
+
 var_dump($lastname);
+var_dump($firstname);
+var_dump($age);
+var_dump($address);
+var_dump($email);
+var_dump($password);
 
 ?>
 
@@ -82,7 +99,7 @@ var_dump($lastname);
     $statement = $db->prepare($query);
 
     //pasted from another script
-     $firstname = $lastname = $phone = $age = $address = $email = $pw = "";
+  $firstname = $lastname = $phone = $age = $address = $email = $pw = "";
 
   $firstname = test_input($_POST['firstname']);
   $lastname = test_input($_POST['lastname']);
