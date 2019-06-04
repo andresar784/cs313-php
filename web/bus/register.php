@@ -69,17 +69,8 @@ session_start();
 
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
-$age = $_POST['age'];
-$address = $_POST['address'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$password = $_POST['pw'];
+
 echo $firstname;<br>
-echo $lastname;<br>
-echo $age;<br>
-echo $email;<br>
-echo $password;<br>
-echo $address;<br>
 
 var_dump($lastname);
 
