@@ -19,53 +19,6 @@ session_start();
 
 </head>
 <body>
-<div class="jumbotron">
-  <div class="container text-center">
-	<h1>Star Bus<h1>
-    <h3>Complete with the required data</h3>
-    </div>
-</div>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.php">Home</a></li>
-        </ul>
-		<ul class="nav navbar-nav navbar-right">
-	  
-		</ul>
-    </div>
-  </div>
-</nav>
-<form method="post" action="">
-<div class="container">
-	<div class="p-3 text-white text-center">
-		<div class="col-xs-6">
-		    <div class="form-group">
-                <dt>Name: <input type="text" name="firstname" required></dt>
-                <dt>Surname: <input type="text" name="lastname" required></dt>
-                <dt>Phone: <input type="text" name="phone" required></dt>
-                <dt>Age: <input type="text" name="age" required></dt>
-                <dt>Address: <input type="text" name="address" required></dt>
-                <dt>Email <input type="email" name="email" required></dt>
-                <dt>Password: <input type="text" name="pw" required></dt>
-                <input type="submit">
-            </div>
-		</div>
-    </div>
-</div>
-<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
-</form>
-
-
 <?php
     try{
 
@@ -114,6 +67,52 @@ session_start();
     die();
     }
 ?>    
+<div class="jumbotron">
+  <div class="container text-center">
+	<h1>Star Bus<h1>
+    <h3>Complete with the required data</h3>
+    </div>
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.php">Home</a></li>
+        </ul>
+		<ul class="nav navbar-nav navbar-right">
+	  
+		</ul>
+    </div>
+  </div>
+</nav>
+<form method="post" action="">
+<div class="container">
+	<div class="p-3 text-white text-center">
+		<div class="col-xs-6">
+		    <div class="form-group">
+                <dt>Name: <input type="text" name="firstname" required></dt>
+                <dt>Surname: <input type="text" name="lastname" required></dt>
+                <dt>Phone: <input type="text" name="phone" required></dt>
+                <dt>Age: <input type="text" name="age" required></dt>
+                <dt>Address: <input type="text" name="address" required></dt>
+                <dt>Email <input type="email" name="email" required></dt>
+                <dt>Password: <input type="text" name="pw" required></dt>
+                <input type="submit">
+            </div>
+		</div>
+    </div>
+</div>
+<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
+</form>
+
 	
 	
 
