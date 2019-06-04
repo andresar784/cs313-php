@@ -60,8 +60,8 @@ session_start();
                 <dt>Password: <input type="text" name="pw" required></dt>
             </div>
 		</div>
+        <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 	</div>
-    <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 </div>
 
 	
