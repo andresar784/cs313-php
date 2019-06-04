@@ -51,7 +51,13 @@ session_start();
 		<div class="col-xs-6">
 		    <div class="form-group">
             <form>
-                <dt>Name:<input type="text" name="fName"></dt>
+                <dt>Name: <input type="text" name="fName" required></dt>
+                <dt>Surname: <input type="text" name="sName" required></dt>
+                <dt>Phone: <input type="text" name="phone" reuqired></dt>
+                <dt>Age: <input type="text" name="age" required></dt>
+                <dt>Address: <input type="text" name="address" required></dt>
+                <dt>Email <input type="email" name="email" required></dt>
+                <dt>Password: <input type="text" name="pw" required></dt>
             </div>
 		</div>
 	</div>
