@@ -61,8 +61,9 @@ session_start();
             </div>
 		</div>
 	</div>
+    <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 </div>
-<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
+
 	
 	
 
