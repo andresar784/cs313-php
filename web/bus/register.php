@@ -89,7 +89,7 @@ function test_input($data) {
     //hash the password
     $hashed = password_hash($pw);
     //add the values to the bususer table
-    $query = 'INSERT INTO bususer(personid, lastname, firstname, phone, age, address, email, password) VALUES(DEFAULT, :sName, :fName, :phone, :age, :address, :email, :hashed)';
+    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:sName, :fName, :phone, :age, :address, :email, :hashed)';
     $statement = $db->prepare($query);
 
     // Now we bind the values to the placeholders. This does some nice things
