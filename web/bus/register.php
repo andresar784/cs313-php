@@ -105,7 +105,7 @@ function test_input($data) {
     $statement->bindValue(':password', $password);
     
 
-    $statement->execute();
+    $statement->execute($query);
     }
     catch (Exception $ex)
     {           
