@@ -75,6 +75,9 @@ $address = test_input($_POST['addres']);
 $email = test_input($_POST['email']);
 $pw = test_input($_POST['pw']);
 
+//hash the password
+$password = password_hash($pw);
+
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -86,10 +89,9 @@ function test_input($data) {
 
 <?php
     try{
-    //hash the password
-    $hashed = password_hash($pw);
+    
     //add the values to the bususer table
-    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :hashed)';
+    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
     $statement = $db->prepare($query);
 
     // Now we bind the values to the placeholders. This does some nice things
@@ -100,7 +102,7 @@ function test_input($data) {
     $statement->bindValue(':age', $age);
     $statement->bindValue(':address', $address);
     $statement->bindValue(':email', $email);
-    $statement->bindValue(':password', $hashed);
+    $statement->bindValue(':password', $password);
     
 
     $statement->execute();
