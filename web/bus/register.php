@@ -45,7 +45,7 @@ session_start();
     </div>
   </div>
 </nav>
-<form method="POST" action="?">
+<form method="post" action="">
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
@@ -68,22 +68,8 @@ session_start();
 
 <?php
     try{
-    
-    //add the values to the bususer table
-    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
-    $statement = $db->prepare($query);
 
-    // Now we bind the values to the placeholders. This does some nice things
-    // including sanitizing the input with regard to sql commands.
-    $statement->bindValue(':lastname', $lastname);
-    $statement->bindValue(':firstname', $firstname);
-    $statement->bindValue(':phone', $phone);
-    $statement->bindValue(':age', $age);
-    $statement->bindValue(':address', $address);
-    $statement->bindValue(':email', $email);
-    $statement->bindValue(':password', $password);
-
-    //pasted from another script
+      //pasted from another script
     $firstname = $lastname = $phone = $age = $address = $email = $pw = "";
 
     $firstname = test_input($_POST['firstname']);
@@ -104,6 +90,19 @@ session_start();
        return $data;
     }
     
+    //add the values to the bususer table
+    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
+    $statement = $db->prepare($query);
+
+    // Now we bind the values to the placeholders. This does some nice things
+    // including sanitizing the input with regard to sql commands.
+    $statement->bindValue(':lastname', $lastname);
+    $statement->bindValue(':firstname', $firstname);
+    $statement->bindValue(':phone', $phone);
+    $statement->bindValue(':age', $age);
+    $statement->bindValue(':address', $address);
+    $statement->bindValue(':email', $email);
+    $statement->bindValue(':password', $password);
 
     $statement->execute();
     }
