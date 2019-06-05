@@ -95,7 +95,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
         User password:<br>
         <input type="password" name="txtPassword">
     <br>
-    <button type="submit" class="btn btn-primary btn-lg">Confirm 3/4</button>
+    <button type="submit" class="btn btn-primary btn-lg">Log</button>
     </form>
 		</div>
 		</div>
