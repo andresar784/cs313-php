@@ -87,7 +87,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-    <form>
+    <form action="" method="post">
    
         Email:<br>
         <input type="email" name="txtUser">
