@@ -49,7 +49,7 @@ session_start();
 <form method="post" action="?">
 <div class="container">
 	<div class="p-3 text-white text-center">
-		<div class="col-xs-3">
+		<div class="col-xs-6">
 		   <div class="form-group"> 
                 <dt>Name: <input type="text" name="firstname" required></dt>
                 <dt>Surname: <input type="text" name="lastname" required></dt>
