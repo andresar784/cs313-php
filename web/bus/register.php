@@ -50,7 +50,7 @@ session_start();
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		    <div class="form-group">
+		    
                 <dt>Name: <input type="text" name="firstname" required></dt>
                 <dt>Surname: <input type="text" name="lastname" required></dt>
                 <dt>Phone: <input type="text" name="phone" required></dt>
@@ -58,11 +58,13 @@ session_start();
                 <dt>Address: <input type="text" name="address" required></dt>
                 <dt>Email <input type="email" name="email" required></dt>
                 <dt>Password: <input type="text" name="password" required></dt>
-               
-            </div>
-	
-<button type="submit" class="btn btn-primary btn-lg"> Create account</button>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg"> Create account</button>
 </form>
+
+</div>
+    </div>
+</div
 
 <?php
 
@@ -124,9 +126,7 @@ session_start();
     die();
     }
 ?> 
-	</div>
-    </div>
-</div>
+
 
 	
 	
