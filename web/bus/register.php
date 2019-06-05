@@ -61,7 +61,7 @@ session_start();
                
             </div>
 	
-<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
+<button type="submit" class="btn btn-primary btn-lg"> Create account</button>
 </form>
 
 <?php
@@ -112,6 +112,8 @@ session_start();
     $statement->bindValue(':password', $password);
 
     $statement->execute();
+    header("Location: login.php");
+    die();
     
     }
     catch (Exception $ex)
@@ -125,6 +127,7 @@ session_start();
 	</div>
     </div>
 </div>
+
 	
 	
 
