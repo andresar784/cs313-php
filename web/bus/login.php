@@ -97,7 +97,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
         <?php
           if ($badLogin)
               {
-                echo "Incorrect email or password!<br /><br />\n";
+                echo "Incorrect email or password! Try again!<br /><br />\n";
               }
         ?>
     <br>
