@@ -88,15 +88,7 @@ session_start();
   }
 
 ?>
-<?php
 
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-
-echo $firstname;<br>
-var_dump($lastname);
-
-?>
 
 
 
