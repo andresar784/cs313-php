@@ -77,8 +77,7 @@ session_start();
   $email = test_input($_POST['email']);
   $password = test_input($_POST['password']);
 
-  //hash the password
- // $password = password_hash($password);
+  
 
   function test_input($data) {
     $data = trim($data);
@@ -95,6 +94,8 @@ session_start();
 <?php
     try{
 
+    //hash the password
+    $password = password_hash($password, PASSWORD_BCRYPT);
     
     //add the values to the bususer table
     $query = 'INSERT INTO public.bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
