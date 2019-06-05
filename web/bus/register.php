@@ -46,7 +46,7 @@ session_start();
     </div>
   </div>
 </nav>
-<form method="post" action="">
+<form method="post" action="?">
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
@@ -88,7 +88,7 @@ session_start();
   }
 
 ?>
-'<?php
+<?php
 
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
@@ -97,7 +97,7 @@ echo $firstname;<br>
 var_dump($lastname);
 
 ?>
-'
+
 
 
 <?php
