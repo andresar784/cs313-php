@@ -57,8 +57,8 @@ session_start();
                 <dt>Age: <input type="text" name="age" required></dt>
                 <dt>Address: <input type="text" name="address" required></dt>
                 <dt>Email <input type="email" name="email" required></dt>
-                <dt>Password: <input type="text" name="pw" required></dt>
-                <input type="submit">
+                <dt>Password: <input type="text" name="password" required></dt>
+               
             </div>
 	
 <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
@@ -75,10 +75,10 @@ session_start();
   $age = test_input($_POST['age']);
   $address = test_input($_POST['address']);
   $email = test_input($_POST['email']);
-  $pw = test_input($_POST['pw']);
+  $password = test_input($_POST['password']);
 
   //hash the password
-  $password = password_hash($pw);
+ // $password = password_hash($password);
 
   function test_input($data) {
     $data = trim($data);
@@ -111,6 +111,7 @@ session_start();
     $statement->bindValue(':password', $password);
 
     $statement->execute();
+    
     }
     catch (Exception $ex)
     {           
