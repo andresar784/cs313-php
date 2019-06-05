@@ -94,6 +94,12 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
         <br>
         User password:<br>
         <input type="password" name="txtPassword">
+        <?php
+          if ($badLogin)
+              {
+                echo "Incorrect email or password!<br /><br />\n";
+              }
+        ?>
     <br>
     <button type="submit" class="btn btn-primary btn-lg">Log</button>
     </form>
