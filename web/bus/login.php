@@ -61,7 +61,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
-    <h3>Fill all the field with the requested info</h3>      
+    <h3>Log in with your email</h3>      
     </div>
 </div>
 <nav class="navbar navbar-inverse">

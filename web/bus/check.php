@@ -49,20 +49,13 @@ session_start();
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-		<div class="form-group">
+		    <div class="form-group">
 			
+		    </div>
 		</div>
-		</div>
-		<div class="col-xs-6">
-		<div class="form-group">
-			
-		</div>
-		</div>
-		
-	<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
+	    <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 	</div>
-	
-	</div>
+</div>
 	
 
 <footer class="container-fluid text-center">
