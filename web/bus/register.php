@@ -51,8 +51,8 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
 		   <div class="form-group"> 
-                <dt>Name: <input type="text" name="firstname" required></dt>
-                <dt>Surname: <input type="text" name="lastname" required></dt>
+                <label>Name: </label><input type="text" name="firstname" required></dt>
+                <label>Surname: </label> <input type="text" name="lastname" required></dt>
                 <dt>Phone: <input type="text" name="phone" required></dt>
                 <dt>Age: <input type="text" name="age" required></dt>
                 <dt>Address: <input type="text" name="address" required></dt>
