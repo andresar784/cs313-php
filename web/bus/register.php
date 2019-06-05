@@ -64,27 +64,9 @@ session_start();
 <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
 </form>
 
-
 <?php
 
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-
-echo $firstname;<br>
-
-var_dump($lastname);
-
-?>
-
-<?php
-    try{
-
-    
-    //add the values to the bususer table
-    $query = 'INSERT INTO bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
-    $statement = $db->prepare($query);
-
-    //pasted from another script
+  //pasted from another script
   $firstname = $lastname = $phone = $age = $address = $email = $pw = "";
 
   $firstname = test_input($_POST['firstname']);
@@ -104,8 +86,28 @@ var_dump($lastname);
     $data = htmlspecialchars($data);
      return $data;
   }
-  
-      // Now we bind the values to the placeholders. This does some nice things
+
+?>
+
+<?php
+
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+
+echo $firstname;<br>
+var_dump($lastname);
+
+?>
+
+<?php
+    try{
+
+    
+    //add the values to the bususer table
+    $query = 'INSERT INTO public.bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
+    $statement = $db->prepare($query
+    
+    // Now we bind the values to the placeholders. This does some nice things
     // including sanitizing the input with regard to sql commands.
     $statement->bindValue(':lastname', $lastname);
     $statement->bindValue(':firstname', $firstname);
