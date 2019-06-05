@@ -1,6 +1,46 @@
 <?php
 session_start();
+
+$badLogin = false;
+if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
+{
+	// they have submitted a username and password for us to check
+	$email = $_POST['txtUser'];
+	$password = $_POST['txtPassword'];
+	// Connect to the DB
+	require_once('bd.php');
+  $db = DB::init();
+
+	$query = 'SELECT password FROM bususer WHERE email=:email';
+	$statement = $db->prepare($query);
+	$statement->bindValue(':email', $email);
+	$result = $statement->execute();
+	if ($result)
+	{
+		$row = $statement->fetch();
+		$hashedPasswordFromDB = $row['password'];
+		// now check to see if the hashed password matches
+		if (password_verify($password, $hashedPasswordFromDB))
+		{
+			// password was correct, put the user on the session, and redirect to home
+			$_SESSION['email'] = $email;
+			header("Location: process.php");
+			die(); // we always include a die after redirects.
+		}
+		else
+		{
+			$badLogin = true;
+		}
+	}
+	else
+	{
+		$badLogin = true;
+	}
+}
+// If we get to this point without having redirected, then it means they
+// should just see the login form.
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,16 +89,17 @@ session_start();
 		<div class="col-xs-6">
     <form>
    
-        Email<br>
-        <input type="email" name="useremail">
+        Email:<br>
+        <input type="email" name="txtUser">
         <br>
         User password:<br>
-        <input type="password" name="psw">
-    </form>
+        <input type="password" name="txtPassword">
+    
    
    
     <br>
-    <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
+    <button type="submit" class="btn btn-primary btn-lg">Confirm 3/4</button>
+    </form>
 		</div>
 		</div>
    
