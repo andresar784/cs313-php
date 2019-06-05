@@ -61,9 +61,7 @@ session_start();
         </div>
         <button type="submit" class="btn btn-primary btn-lg"> Create account</button>
 </form>
-</div>
-</div>
-</div>
+
 
 <?php
 
@@ -125,7 +123,9 @@ session_start();
     die();
     }
 ?> 
-
+</div>
+</div>
+</div>
 
 	
 	
