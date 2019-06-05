@@ -4,7 +4,7 @@ session_start();
 $badLogin = false;
 if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 {
-	// they have submitted a username and password for us to check
+	// they have submitted a email and password for us to check
 	$email = $_POST['txtUser'];
 	$password = $_POST['txtPassword'];
 	// Connect to the DB

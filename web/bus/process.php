@@ -60,8 +60,7 @@ session_start();
     <form>
     </div>
     <br>
-    <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
-		</div>
+    
 		</div>
     <div class="col-xs-6">
     
