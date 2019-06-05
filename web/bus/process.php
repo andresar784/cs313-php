@@ -49,16 +49,16 @@ session_start();
 		<div class="col-xs-6">
     <dt>Login:</dt><br>
     <form action="login.php">
-    <button type="submit" class="btn btn-primary btn-lg">Register</button><br>
+    <button type="submit" class="btn btn-primary btn-lg">Login</button><br>
     </form>
     </div>
-  </form>
-</div>
-
+    </div>
+    <div class="col-xs-6">
     <dt>Or register:</dt><br>
     <form action="register.php">
     <button type="submit" class="btn btn-primary btn-lg">Register</button><br>
     <form>
+    </div>
     <br>
     <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
 		</div>
