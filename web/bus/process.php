@@ -21,7 +21,7 @@ session_start();
 <div class="jumbotron">
   <div class="container text-center">
 	<h1>Star Bus<h1>
-    <h3>Fill all the field with the requested info</h3>      
+    <h3>Log in the system</h3>      
     </div>
 </div>
 <nav class="navbar navbar-inverse">
@@ -48,29 +48,9 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     <dt>Login:</dt><br>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" 
-    class="btn btn-primary btn-lg">Login</button><br><br>
-      <div id="id01" class="modal">
-  
-      <form class="modal-content animate" action="">
-       <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      </div>
-
-    <div class="container">
-      <label for="uname"><b>Email</b></label>
-      <input type="email" placeholder="Enter email" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-     
+    <form action="login.php">
+    <button type="submit" class="btn btn-primary btn-lg">Register</button><br>
+    </form>
     </div>
   </form>
 </div>
@@ -91,19 +71,6 @@ session_start();
 		
 	</div>
  </div><br><br>
-
- <script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-
 
 <footer class="container-fluid text-center">
   <p>Bus Star Copyright 2018 - <?php echo date(Y)?></p>  
