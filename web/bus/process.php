@@ -74,8 +74,11 @@ session_start();
     </div>
   </form>
 </div>
-    <dt>Register:</dt><br>
+
+    <dt>Or register:</dt><br>
+    <form action="register.php">
     <button type="submit" class="btn btn-primary btn-lg">Register</button><br>
+    <form>
     <br>
     <button type="button" class="btn btn-primary btn-lg">Confirm 3/4</button>
 		</div>
