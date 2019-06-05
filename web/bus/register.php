@@ -88,6 +88,16 @@ session_start();
   }
 
 ?>
+'<?php
+
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+
+echo $firstname;<br>
+var_dump($lastname);
+
+?>
+'
 
 
 <?php
@@ -96,7 +106,7 @@ session_start();
     
     //add the values to the bususer table
     $query = 'INSERT INTO public.bususer(lastname, firstname, phone, age, address, email, password) VALUES(:lastname, :firstname, :phone, :age, :address, :email, :password)';
-    $statement = $db->prepare($query
+    $statement = $db->prepare($query);
     
     // Now we bind the values to the placeholders. This does some nice things
     // including sanitizing the input with regard to sql commands.
