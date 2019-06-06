@@ -52,11 +52,11 @@ session_start();
 		<div class="col-xs-6">
 		   <div class="form-group"> 
                 <dt>Name: <input type="text" name="firstname" required></br>
-                <dt>Surname: <input type="text" name="lastname" required></br>
+                <dt>Second: <input type="text" name="lastname" required></br>
                 <dt>Phone: <input type="text" name="phone" required></dt>
                 <dt>Age: <input type="text" name="age" required></dt>
                 <dt>Address: <input type="text" name="address" required></dt>
-                <dt>Email <input type="email" name="email" required></dt>
+                <dt>Email: <input type="email" name="email" required></dt>
                 <dt>Password: <input type="password" name="password" required></dt>
         </div>
         <button type="submit" class="btn btn-primary btn-lg"> Create account</button>
