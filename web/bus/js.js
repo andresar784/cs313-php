@@ -7,9 +7,9 @@ $('.btn').on('click', function() {
 });
 
 $(document).ready(function () {
-  $("#from").change(function () {
+  $("#select.from").change(function () {
 
-    var valueT = $(this).val;
+    var valueT = $(this).children("option:selected").val();
 
     switch(valueT){
       case "Montevideo":
