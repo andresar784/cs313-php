@@ -59,7 +59,7 @@ $lastname = $_SESSION["lastname"];
 		<div class="col-xs-6">
 		    <div class="form-group">
            
-            <dt> Hi: <?php echo $firstname?><?php echo $lastname?></dt>
+            <dt> Hi: <?php echo $firstname?><?php echo " " $lastname?></dt>
             <dt> You are travelling from: <?php echo $from?> </dt><br>
             <dt> To: <?php echo $to;?></dt><br>
 		    <dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
