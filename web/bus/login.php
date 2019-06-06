@@ -15,7 +15,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 	$query = 'SELECT password, firstname, lastname FROM bususer WHERE email=:email';
 	$statement = $db->prepare($query);
   $statement->bindValue(':email', $email);
-  $statement->bindValue(':firstname', $firstname);
+  //$statement->bindValue(':firstname', $firstname);
   //$statement->bindValue(':lastname', $lastname);
   $result = $statement->execute();
 	if ($result)
