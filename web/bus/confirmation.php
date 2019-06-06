@@ -20,7 +20,12 @@ session_start();
   $from = $to = $quantity = "";
   $from = $_POST["from"];
 	$to = $_POST["to"];
-	$quantity = $_POST["quantity"];
+  $quantity = $_POST["quantity"];
+  
+  $_SESSION["from"] = $from;
+  $_SESSION["to"] = $to;
+  $_SESSION["quantity"] = $quantity;
+
 
 ?>
 

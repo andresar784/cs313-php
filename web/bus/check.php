@@ -45,15 +45,23 @@ session_start();
     </div>
   </div>
 </nav>
+<?php
+//get the variable from the session
+$from = $_SESSION["from"];
+$to = $_SESSION["to"];
+$quantity = $_SESSION["quantity"];
+?>
 
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
 		    <div class="form-group">
-			
-		    </div>
+            <dt> You are travelling from: <?php echo $from?> </dt><br>
+            <dt> To: <?php echo $to;?></dt><br>
+		    <dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
+			</div>
 		</div>
-	    <button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
+	    <button type="submit" class="btn btn-primary btn-lg"> Confirm 4/4</button>
 	</div>
 </div>
 	
