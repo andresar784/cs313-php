@@ -113,16 +113,16 @@ $(document).ready(function () {
     if ($(this).val() == "Montevideo") {
       $("#t1").hide();
     }
-    else if($(this).val() == "Durazno"){
+    if($(this).val() == "Durazno"){
       $("#t2").hide();
     }
-    else if($(this).val() == "Paso de los Toros"){
+    if($(this).val() == "Paso de los Toros"){
       $("#t3").hide();
     }
-    else if($(this).val()== "Tacuarembo"){
+    if($(this).val()== "Tacuarembo"){
       $("#t4").hide();
     }
-    else if($(this).val() == "Rivera"){
+    if($(this).val() == "Rivera"){
       $("$t5").hide();
     }
   });

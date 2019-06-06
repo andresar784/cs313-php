@@ -7,23 +7,4 @@ $('.btn').on('click', function() {
 });
 
 
-$(document).ready(function () {
-  $("#from").change(function () {
-    if ($(this).val() == "Montevideo") {
-      $("#t1").hide();
-    }
-    else if($(this).val() == "Durazno"){
-      $("#t2").hide();
-    }
-    else if($(this).val() == "Paso de los Toros"){
-      $("#t3").hide();
-    }
-    else if($(this).val()== "Tacuarembo"){
-      $("#t4").hide();
-    }
-    else if($(this).val() == "Rivera"){
-      $("$t5").hide();
-    }
-  });
-});
 
