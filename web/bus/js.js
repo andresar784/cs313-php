@@ -8,21 +8,26 @@ $('.btn').on('click', function() {
 
 $(document).ready(function () {
   $("#from").change(function () {
-    if ($(this).val() == "Montevideo") 
+
+    var valueT = $(this).val;
+
+    switch(valueT){
+      case "Montevideo":
       $("#t1").hide();
-    
-    if($(this).val() == "Durazno")
+      break;
+      case "Durazno":
       $("#t2").hide();
-    
-    if($(this).val() == "Paso de los Toros")
+      break;
+      case "Paso de los Toros":
       $("#t3").hide();
-    
-    if($(this).val()== "Tacuarembo")
+      break;
+      case "Tacuarembo":
       $("#t4").hide();
-    
-    if($(this).val() == "Rivera")
+      break;
+      default:
       $("$t5").hide();
-    
-  });
+      break;
+        }
+      });
 });
 
