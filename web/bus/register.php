@@ -57,7 +57,7 @@ session_start();
                 <dt>Age: <input type="text" name="age" required></dt>
                 <dt>Address: <input type="text" name="address" required></dt>
                 <dt>Email <input type="email" name="email" required></dt>
-                <dt>Password: <input type="pass" name="password" required></dt>
+                <dt>Password: <input type="password" name="password" required></dt>
         </div>
         <button type="submit" class="btn btn-primary btn-lg"> Create account</button>
 </form>
