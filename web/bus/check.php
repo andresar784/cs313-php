@@ -50,7 +50,7 @@ session_start();
 $from = $_SESSION["from"];
 $to = $_SESSION["to"];
 $quantity = $_SESSION["quantity"];
-$firstname = $_SESSION["firstname"];
+//$firstname = $_SESSION["firstname"];
 ?>
 
 <div class="container">
