@@ -14,19 +14,19 @@ $(document).ready(function () {
     
     switch(valueT){
       case "Montevideo":
-      $("#t1").hide();
+      $("#t1").style.display = "none";
       break;
       case "Durazno":
-      $("#t2").hide();
+      $("#t2").style.display = "none";
       break;
       case "Paso de los Toros":
-      $("#t3").hide();
+      $("#t3").style.display = "none";
       break;
       case "Tacuarembo":
-      $("#t4").hide();
+      $("#t4").style.display = "none";
       break;
       default:
-      $("$t5").hide();
+      $("#t5").style.display = "none";
       
       }
       });
