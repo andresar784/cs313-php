@@ -77,11 +77,11 @@ session_start();
 		<div class="form-group">
 			<label >To:</label>
 				<select name="to" class="form-control">
-					<option value="Montevideo" ><?php echo $place_name[1]?></option>
-					<option value="Durazno"><?php echo $place_name[2]?></option>
-					<option value="Paso de los Toros"><?php echo $place_name[3]?></option>
-					<option value="Tacuarembo"><?php echo $place_name[4]?></option>
-					<option value="Rivera" ><?php echo $place_name[5]?></option>
+					<option id="t1" value="Montevideo" ><?php echo $place_name[1]?></option>
+					<option id="t2" value="Durazno"><?php echo $place_name[2]?></option>
+					<option id="t3" value="Paso de los Toros"><?php echo $place_name[3]?></option>
+					<option id="t4" value="Tacuarembo"><?php echo $place_name[4]?></option>
+					<option id="t5" value="Rivera" ><?php echo $place_name[5]?></option>
 			</select>
 		</div>
 		</div>
