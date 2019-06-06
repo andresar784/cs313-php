@@ -57,7 +57,7 @@ session_start();
                 <dt>Age: <input type="text" name="age" required></dt>
                 <dt>Address: <input type="text" name="address" required></dt>
                 <dt>Email <input type="email" name="email" required></dt>
-                <dt>Password: <input type="text" name="password" required></dt>
+                <dt>Password: <input type="pass" name="password" required></dt>
         </div>
         <button type="submit" class="btn btn-primary btn-lg"> Create account</button>
 </form>
@@ -76,20 +76,14 @@ session_start();
   $email = test_input($_POST['email']);
   $password = test_input($_POST['password']);
 
-  
-
   function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
-     return $data;
+    return $data;
   }
 
 ?>
-
-
-
-
 <?php
     try{
 
@@ -119,7 +113,7 @@ session_start();
     {           
     // Please be aware that you don't want to output the Exception message in
     // a production environment
-    echo "Error with DB. Details: $ex";
+    //echo "Error with DB. Details: $ex";
     die();
     }
 ?> 
