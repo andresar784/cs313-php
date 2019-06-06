@@ -22,7 +22,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 	{
 		$row = $statement->fetch();
     $hashedPasswordFromDB = $row['password'];
-    //$lastname = $row['lastname'];
+    $lastname = $row['lastname'];
     //$firstname = $row['firstname'];
 		// now check to see if the hashed password matches
 		if (password_verify($password, $hashedPasswordFromDB))
