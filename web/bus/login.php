@@ -15,21 +15,21 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 	$query = 'SELECT password, firstname, lastname FROM bususer WHERE email=:email';
 	$statement = $db->prepare($query);
   $statement->bindValue(':email', $email);
-  $statement->bindValue(':firstname', $firstname);
-  $statement->bindValue(':lastname', $lastname);
+  //$statement->bindValue(':firstname', $firstname);
+  //$statement->bindValue(':lastname', $lastname);
   $result = $statement->execute();
 	if ($result)
 	{
 		$row = $statement->fetch();
     $hashedPasswordFromDB = $row['password'];
-    $lastname = $row['lastname'];
-    $firstname = $row['firstname'];
+    //$lastname = $row['lastname'];
+    //$firstname = $row['firstname'];
 		// now check to see if the hashed password matches
 		if (password_verify($password, $hashedPasswordFromDB))
 		{
       // password was correct, put the user on the session, and redirect to home
-      $_SESSION['firstname'] = $firstname;
-      $_SESSION['lastname'] = $lastname;
+      //$_SESSION['firstname'] = $firstname;
+      //$_SESSION['lastname'] = $lastname;
       $_SESSION['email'] = $email;
 			header("Location: check.php");
 			die(); // we always include a die after redirects.
