@@ -7,7 +7,7 @@ $('.btn').on('click', function() {
 });
 
 $(document).ready(function () {
-  $("#select.from").change(function () {
+  $("#from").change(function () {
 
     var valueT = $(this).children("option:selected").val();
 
