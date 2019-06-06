@@ -8,7 +8,7 @@ $('.btn').on('click', function() {
 
 
 $(document).ready(function () {
-  $("#from")('change', function () {
+  $("#from").change(function () {
     if (value == "Montevideo") {
       $("#t1").hide();
     }

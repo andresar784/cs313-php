@@ -63,7 +63,7 @@ session_start();
 		<div class="col-xs-6">
 		<div class="form-group">
 			<label>From:</label>
-			<select name="from" class="form-control">
+			<select id="from" name="from" class="form-control">
 					<option value="Montevideo"><?php echo $place_name[1]?></option>
 					<option value="Durazno"><?php echo $place_name[2]?></option>
 					<option value="Paso de los Toros"><?php echo $place_name[3]?></option>
