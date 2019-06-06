@@ -50,12 +50,14 @@ session_start();
 $from = $_SESSION["from"];
 $to = $_SESSION["to"];
 $quantity = $_SESSION["quantity"];
+$firstname = $_SESSION["firstname"];
 ?>
 
 <div class="container">
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
 		    <div class="form-group">
+            <dt> Hi <?php echo $firstname?>
             <dt> You are travelling from: <?php echo $from?> </dt><br>
             <dt> To: <?php echo $to;?></dt><br>
 		    <dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
