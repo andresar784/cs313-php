@@ -12,11 +12,11 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 	require_once('bd.php');
   $db = DB::init();
 
-	$query = 'SELECT password FROM bususer WHERE email=:email';
+	$query = 'SELECT password, firstname, lastname FROM bususer WHERE email=:email';
 	$statement = $db->prepare($query);
   $statement->bindValue(':email', $email);
-  //$statement->bindValue(':firstname', $firstname);
-  //$statement->bindValue(':lastname', $lastname);
+  $statement->bindValue(':firstname', $firstname);
+  $statement->bindValue(':lastname', $lastname);
   $result = $statement->execute();
 	if ($result)
 	{
@@ -26,8 +26,8 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 		if (password_verify($password, $hashedPasswordFromDB))
 		{
       // password was correct, put the user on the session, and redirect to home
-      //$_SESSION['firstname'] = $firstname;
-      //$_SESSION['lastname'] = $lastname;
+      $_SESSION['firstname'] = $firstname;
+      $_SESSION['lastname'] = $lastname;
       $_SESSION['email'] = $email;
 			header("Location: check.php");
 			die(); // we always include a die after redirects.

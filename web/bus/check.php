@@ -58,7 +58,8 @@ $lastname = $_SESSION["lastname"];
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
 		    <div class="form-group">
-            <dt> Hi: <?php echo $firstname?> <?php echo $lastname?></dt><br>
+            var_dump($lastname;)
+            <dt> Hi: <?php echo $firstname?></dt><br>
             <dt> You are travelling from: <?php echo $from?> </dt><br>
             <dt> To: <?php echo $to;?></dt><br>
 		    <dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
