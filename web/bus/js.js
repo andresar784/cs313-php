@@ -9,19 +9,19 @@ $('.btn').on('click', function() {
 
 $(document).ready(function () {
   $("#from").change(function () {
-    if (value == "Montevideo") {
+    if ($(this).val() == "Montevideo") {
       $("#t1").hide();
     }
-    else if(value == "Durazno"){
+    else if($(this).val() == "Durazno"){
       $("#t2").hide();
     }
-    else if(value == "Paso de los Toros"){
+    else if($(this).val() == "Paso de los Toros"){
       $("#t3").hide();
     }
-    else if(value == "Tacuarembo"){
+    else if($(this).val()== "Tacuarembo"){
       $("#t4").hide();
     }
-    else if(value == "Rivera"){
+    else if($(this).val() == "Rivera"){
       $("$t5").hide();
     }
   });
