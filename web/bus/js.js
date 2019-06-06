@@ -11,6 +11,7 @@ $(document).ready(function () {
 
     var valueT = $(this).children("option:selected").val();
 
+    
     switch(valueT){
       case "Montevideo":
       $("#t1").hide();
