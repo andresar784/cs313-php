@@ -26,8 +26,8 @@ $(document).ready(function () {
       break;
       default:
       $("$t5").hide();
-      break;
-        }
+      
+      }
       });
 });
 
