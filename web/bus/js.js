@@ -45,7 +45,7 @@ function calculatePrice(from, to, quantity){
     price = 390 * quantity;
   }
 
-  document.getElementById("showprice").innerHTML = price;
+  document.getElementById("showprice").innerHTML = 56;
 
 
 }
