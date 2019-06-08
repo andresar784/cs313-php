@@ -29,6 +29,18 @@ session_start();
 	}
 
 ?>
+<?php
+  $from = $to = $quantity = "";
+  $from = $_POST["from"];
+	$to = $_POST["to"];
+  $quantity = $_POST["quantity"];
+	
+	$from = $_SESSION["from"];
+	$to = $_SESSION["to"];
+	$quantity = $_SESSION["quantity"];
+
+
+?>
 
 
 <div class="jumbotron">
