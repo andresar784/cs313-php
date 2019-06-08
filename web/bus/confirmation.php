@@ -60,7 +60,7 @@ session_start();
     <dt> To: <?php echo $to;?></dt><br>
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
     <dt> Total amount is: <p id="showprice">0</p> </dt><br>
-    <button onclick="calculatePrice()">Calculate Price</button>
+    <button onclick="calculatePrice(<?php echo $from?>)">Calculate Price</button>
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
@@ -75,10 +75,11 @@ session_start();
  </div><br><br>
 
  <script>
- function calculatePrice(){
+ function calculatePrice(from){
+   var from = from'
   
   var price = 500;
-   document.getElementById("showprice").innerHTML = <?php echo $from?>;
+   document.getElementById("showprice").innerHTML = from;
 }
 </script>
 
