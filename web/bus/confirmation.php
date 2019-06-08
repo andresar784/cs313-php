@@ -83,6 +83,15 @@ session_start();
   if (from == "Montevideo" && to == "Durazno"){
     price = 180 * q;
   }
+  else if (from == "Montevideo" && to == "Paso de los Toros"){
+    price = 250 * q;
+  }
+  else if (from == "Montevideo" && to == "Tacuarembo"){
+    price = 390 * q;
+  }
+  else if(from == "Montevideo" && to == "Rivera"){
+    price = 500 * q;
+  }
 
   document.getElementById("showprice").innerHTML = price;
 }
