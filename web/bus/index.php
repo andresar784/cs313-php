@@ -102,9 +102,9 @@ session_start();
   $from = $_SESSION["from"];
 	$to = $_SESSION["to"];
 	$quantity = $_SESSION["quantity"];
-	echo $to;
+	var_dump($to);
 	?>
-	<button type="submit" class="btn btn-primary btn-lg" onclcik> Confirm 1/4</button>
+	<button type="submit" class="btn btn-primary btn-lg" onclick=calculatePrice($from, $to, $quantity)> Confirm 1/4</button>
 	</div>
 	
 	</div>
