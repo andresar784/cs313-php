@@ -79,7 +79,7 @@ session_start();
   var quantity = <?php echo $quantity;?>
   var from = <?php echo json_decode($from);?>;
   var price = 500;
-  document.getElementById("showprice").innerHTML = from;
+  document.getElementById("showprice").innerHTML = quantity;
 }
 </script>
 
