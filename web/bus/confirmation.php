@@ -60,7 +60,7 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     <?php
-    echo $price;
+    var_dump($price);
     ?>
 		<dt> You are travelling from: <?php echo $from?> </dt><br>
     <dt> To: <?php echo $to;?></dt><br>
@@ -68,7 +68,7 @@ session_start();
     <form action="" method="post">
     <dt> Total amount is (in dollars): <span name="price" id=showPrice>0</span>
     <button type="submit" onclick="calculatePrice()">Calculate Price</button>
-    <form>
+    </form>
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
