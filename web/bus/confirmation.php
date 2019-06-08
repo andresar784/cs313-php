@@ -76,7 +76,7 @@ session_start();
 
  <script>
  function calculatePrice(from){
-   var from = from'
+   var from = from;
   
   var price = 500;
    document.getElementById("showprice").innerHTML = from;
