@@ -15,12 +15,12 @@ session_start();
  </head>
 <body>
 <?php
-  $from = $to = $quantity = "";
+  $from = $to = $quantity = $price "";
   
   $from = $_POST["from"];
 	$to = $_POST["to"];
   $quantity = $_POST["quantity"];
-  
+  $price = $_POST['price']
  
   
   $_SESSION["from"] = $from;
@@ -60,14 +60,15 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     <?php
-    
+    echo $price;
     ?>
 		<dt> You are travelling from: <?php echo $from?> </dt><br>
     <dt> To: <?php echo $to;?></dt><br>
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
-    <dt> Total amount is (in dollars): <span id=showPrice>0</span>
-    <?php echo $price;?><br>
-    <button onclick="calculatePrice()">Calculate Price</button>
+    <form action="" method="post">
+    <dt> Total amount is (in dollars): <span name="price" id=showPrice>0</span>
+    <button type="submit" onclick="calculatePrice()">Calculate Price</button>
+    <form>
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
@@ -94,7 +95,7 @@ session_start();
   else if (from == "Montevideo" && to == "Paso de los Toros" || from == "Paso de los Toros" && to == "Montevideo"){
     price = 250 * q;
   }
-  else if (from == "Montevideo" && to == "Tacuarembo" || from == "Rivera" && to == "Montevideo" ){
+  else if (from == "Montevideo" && to == "Tacuarembo" || from == "Tacuarembo" && to == "Montevideo" ){
     price = 390 * q;
   }
   else if(from == "Montevideo" && to == "Rivera" || from == "Rivera" && to == "Montevideo"){
@@ -119,11 +120,7 @@ session_start();
     price = 110 * q;
   }
 	document.getElementById("showPrice").innerHTML = price;
-	
-
-
 }
-
 </script>
  
 
