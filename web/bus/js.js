@@ -33,7 +33,7 @@ $(document).ready(function () {
 });
 
 function calculatePrice(){
-  var price = 500;
+  
   document.getElementById("showprice").innerHTML = "nothing";
 }
 
