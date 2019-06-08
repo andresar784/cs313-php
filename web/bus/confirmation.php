@@ -15,11 +15,12 @@ session_start();
  </head>
 <body>
 <?php
-  $from = $to = $quantity = $price = "";
+  $from = $to = $quantity = "";
+  
   $from = $_POST["from"];
 	$to = $_POST["to"];
   $quantity = $_POST["quantity"];
-  $price = $_POST["price"];
+  
  
   
   $_SESSION["from"] = $from;
@@ -59,7 +60,7 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     <?php
-    var_dump($price);
+    
     ?>
 		<dt> You are travelling from: <?php echo $from?> </dt><br>
     <dt> To: <?php echo $to;?></dt><br>
