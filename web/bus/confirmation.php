@@ -76,8 +76,8 @@ session_start();
 
  <script>
  function calculatePrice(){
-  var q = <?php echo $quantity; ?>;
-  var from = <?php echo json_decode($from);?>;
+  var q = "<?php echo $quantity; ?>";
+  var f = <?php echo json_decode($from);?>;
   var price = 500;
   document.getElementById("showprice").innerHTML = q;
 }
