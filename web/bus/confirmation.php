@@ -20,7 +20,7 @@ session_start();
   $from = $_POST["from"];
 	$to = $_POST["to"];
   $quantity = $_POST["quantity"];
-  $price = $_POST['price']
+  $price = $_POST['price'];
  
   
   $_SESSION["from"] = $from;
