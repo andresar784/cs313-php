@@ -65,6 +65,8 @@ $lastname = $_SESSION["lastname"];
 		    <dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
 			</div>
 		</div>
+
+    <a href="print.php">Print<a>
     <form action="print.php">
 	    <button type="submit" class="btn btn-primary btn-lg" onclick> Confirm 4/4</button>
       </form>
