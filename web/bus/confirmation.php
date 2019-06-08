@@ -78,8 +78,8 @@ session_start();
  function calculatePrice(){  
   var q = "<?=$quantity ?>";
   var price = 500;
-  var total = q * price;
-  document.getElementById("showprice").innerHTML = total;
+  var from = "<?=$from ?>";
+  document.getElementById("showprice").innerHTML = from;
 }
 </script>
 
