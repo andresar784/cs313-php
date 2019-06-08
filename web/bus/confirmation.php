@@ -79,7 +79,8 @@ session_start();
   var q = "<?=$quantity ?>";
   var price = 500;
   var from = "<?=$from ?>";
-  document.getElementById("showprice").innerHTML = from;
+  var to = "<?=$to ?>";
+  document.getElementById("showprice").innerHTML = to;
 }
 </script>
 
