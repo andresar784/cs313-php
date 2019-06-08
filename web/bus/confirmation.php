@@ -114,6 +114,7 @@ session_start();
     price = 110 * q;
   }
   document.getElementById("showprice").innerHTML = price;
+  
   // document.write('<a href="confirmation.php?price='+price'"></a>');
   
 </script>
