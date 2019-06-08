@@ -97,7 +97,14 @@ session_start();
 				</select>
 		</div>
 	</div>
-	<button type="submit" class="btn btn-primary btn-lg"> Confirm 1/4</button>
+	<?php
+	$from = $to = $quantity = "";
+  $from = $_SESSION["from"];
+	$to = $_SESSION["to"];
+	$quantity = $_SESSION["quantity"];
+	echo $to;
+	?>
+	<button type="submit" class="btn btn-primary btn-lg" onclcik> Confirm 1/4</button>
 	</div>
 	
 	</div>
