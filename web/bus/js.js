@@ -38,14 +38,8 @@ function calculatePrice(from, to, quantity){
   var quantity = quantity;
   var price;
 
-  if(from == "Montevideo" & to == "Rivera"){
-    price = 500 * quantity;
-  }
-  else if(from == "Montevideo" & to == "Tacuarembo"){
-    price = 390 * quantity;
-  }
-
-  document.getElementById("showprice").innerHTML = 56;
+ 
+  document.getElementById("showprice").innerHTML = "nothing";
 
 
 }
