@@ -2,6 +2,11 @@
 require_once('bd.php');
 $db = DB::init();
 
+
+require_once('fpdf.php');
+
+
+
 session_start();
 ?>
 <!DOCTYPE html>
@@ -72,7 +77,15 @@ $lastname = $_SESSION["lastname"];
       </form>
 	</div>
 </div>
-	
+<?php
+$pdf = new FPDF();
+$pdf->AddFont('Calligrapher','','calligra.php');
+$pdf->AddPage();
+$pdf->SetFont('Calligrapher','',35);
+$pdf->Write(10,'Enjoy new fonts with FPDF!');
+$pdf->Output();
+
+?>
 
 <footer class="container-fluid text-center">
   <p>Bus Star Copyright 2018 - <?php echo date(Y)?></p>
