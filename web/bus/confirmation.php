@@ -78,7 +78,7 @@ session_start();
 
  <script>
  function calculatePrice(){  
-  var q = "<?=$quantity ?>";
+   var q = "<?=$quantity ?>";
   var price;
   var from = "<?=$from ?>";
   var to = "<?=$to ?>";
@@ -114,6 +114,7 @@ session_start();
     price = 110 * q;
   }
   document.getElementById("showprice").innerHTML = price;
+
 }
 
 </script>
