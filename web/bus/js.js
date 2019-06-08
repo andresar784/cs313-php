@@ -32,13 +32,11 @@ $(document).ready(function () {
       });
 });
 
-function calculatePrice(from, to, quantity){
+function calculatePrice(){
   var from = from;
   var to = to;
   var quantity = quantity;
   var price = 500;
-  
-
-    document.getElementById("showprice").innerHTML = price;
+  document.getElementById("showprice").innerHTML = price;
 }
 
