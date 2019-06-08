@@ -77,10 +77,14 @@ session_start();
  <script>
  function calculatePrice(){  
   var q = "<?=$quantity ?>";
-  var price = 500;
+  var price;
   var from = "<?=$from ?>";
   var to = "<?=$to ?>";
-  document.getElementById("showprice").innerHTML = to;
+  if (from == "Montevideo" && to == "Durazno"){
+    price = 180 * q;
+  }
+
+  document.getElementById("showprice").innerHTML = price;
 }
 </script>
 
