@@ -32,9 +32,5 @@ $(document).ready(function () {
       });
 });
 
-function calculatePrice(from){
-  var from = from;
-  var price = 500;
-   document.getElementById("showprice").innerHTML = from;
-}
+
 
