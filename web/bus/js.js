@@ -40,6 +40,9 @@ function calculatePrice(from, to, quantity){
 
  
   document.getElementById("showprice").innerHTML = "nothing";
+}
 
+function calculate(){
+  document.getElementById("showprice").innerHTML = "nothing"
 
 }
