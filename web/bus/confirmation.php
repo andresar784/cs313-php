@@ -77,9 +77,8 @@ session_start();
  <script>
  function calculatePrice(){
    var from = <?php echo $from?>;
-  
   var price = 500;
-   document.getElementById("showprice").innerHTML = from;
+   document.getElementById("showprice").innerHTML = "from";
 }
 </script>
 
