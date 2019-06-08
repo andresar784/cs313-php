@@ -19,6 +19,7 @@ session_start();
   $from = $_POST["from"];
 	$to = $_POST["to"];
   $quantity = $_POST["quantity"];
+  $price = $_GET['price'];
   
   $_SESSION["from"] = $from;
   $_SESSION["to"] = $to;
@@ -60,6 +61,7 @@ session_start();
     <dt> To: <?php echo $to;?></dt><br>
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
     <dt> Total amount is (in dollars): <span id="showprice">0</span> </dt><br>
+    <dt> To: <?php echo $price;?></dt><br>
     <button onclick="calculatePrice()">Calculate Price</button>
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
@@ -80,6 +82,7 @@ session_start();
   var price;
   var from = "<?=$from ?>";
   var to = "<?=$to ?>";
+
   if (from == "Montevideo" && to == "Durazno" || from == "Durazno" && to == "Montevideo"){
     price = 180 * q;
   }
@@ -110,11 +113,9 @@ session_start();
   else if(from == "Tacuarembo" && to == "Rivera" || from == "Rivera" && to == "Tacuarembo"){
     price = 110 * q;
   }
-
-  
-
   document.getElementById("showprice").innerHTML = price;
-}
+  document.write('<a href="confirmation.php?price='+price'"></a>');
+  
 </script>
 
 <footer class="container-fluid text-center">
