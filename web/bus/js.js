@@ -36,13 +36,10 @@ function calculatePrice(from, to, quantity){
   var from = from;
   var to = to;
   var quantity = quantity;
-  var price;
+  var price = 500;
   if(from == "Montevideo" && to == "Rivera")
     price = 500 * quantity;
-  
-  
 
- 
-  document.getElementById("showprice").innerHTML = price;
+    document.getElementById("showprice").innerHTML = price;
 }
 
