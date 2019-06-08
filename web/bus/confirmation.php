@@ -67,7 +67,7 @@ session_start();
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
     <dt> Total amount is (in dollars): <span id=showPrice>0</span>
     <?php echo $price;?><br>
-    <button onclick="calculatePrice()">calculate Price<</button>
+    <button onclick="calculatePrice()">Calculate Price</button>
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
@@ -120,7 +120,7 @@ session_start();
   }
 	document.getElementById("showPrice").innerHTML = price;
 	
-	alert(price);
+
 
 }
 
