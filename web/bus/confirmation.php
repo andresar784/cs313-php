@@ -59,7 +59,7 @@ session_start();
 		<dt> You are travelling from: <?php echo $from?> </dt><br>
     <dt> To: <?php echo $to;?></dt><br>
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
-    <dt> Total amount is: <p id="showprice">0</p> </dt><br>
+    <dt> Total amount is: <span id="showprice">0</span> </dt><br>
     <button onclick="calculatePrice()">Calculate Price</button>
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
