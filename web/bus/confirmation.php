@@ -75,11 +75,10 @@ session_start();
  </div><br><br>
 
  <script>
- function calculatePrice(){
+ function calculatePrice(){  
   var q = "<?=$quantity ?>";
-  
   var price = 500;
-  document.getElementById("showprice").innerHTML = q;
+  document.getElementById("showprice").innerHTML = price;
 }
 </script>
 
