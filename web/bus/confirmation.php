@@ -92,6 +92,26 @@ session_start();
   else if(from == "Montevideo" && to == "Rivera" || from == "Rivera" && to == "Montevideo"){
     price = 500 * q;
   }
+  else if(from == "Durazno" && to == "Paso de los Toros" || from == "Paso de los Toros" && to == "Durazno"){
+    price = 70 * q;
+  }
+  else if(from == "Durazno" && to == "Tacuarembo" || from == "Tacuarembo" && to == "Durazno"){
+    price = 180 * q;
+  }
+  else if(from == "Durazno" && to == "Rivera" || from == "Rivera" && to == "Durazno"){
+    price = 320 * q;
+  }
+  else if(from == "Paso de los Toros" && to == "Tacuarembo" || from == "Tacuarembo" && to == "Paso de los Toros"){
+    price = 140 * q;
+  }
+  else if(from == "Paso de los Toros" && to == "Rivera" || from == "Rivera" && to == "Paso de los Toros"){
+    price = 250 * q;
+  }
+  else if(from == "Tacuarembo" && to == "Rivera" || from == "Rivera" && to == "Tacuarembo"){
+    price = 110 * q;
+  }
+
+  
 
   document.getElementById("showprice").innerHTML = price;
 }
