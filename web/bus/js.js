@@ -34,6 +34,6 @@ $(document).ready(function () {
 
 function calculatePrice(){
   var price = 500;
-  document.getElementById("showprice").innerHTML = price;
+  document.getElementById("showprice").innerHTML = "nothing";
 }
 
