@@ -65,7 +65,7 @@ session_start();
 		<dt> You are travelling from: <?php echo $from?> </dt><br>
     <dt> To: <?php echo $to;?></dt><br>
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
-    <dt> Total amount is (in dollars): <span id=showPrice>0</span>;
+    <dt> Total amount is (in dollars): <span id=showPrice>0</span>
     <?php echo $price;?><br>
     <button onclick="calculatePrice()">calculate Price<</button>
     <form action="index.php">
@@ -118,7 +118,7 @@ session_start();
   else if(from == "Tacuarembo" && to == "Rivera" || from == "Rivera" && to == "Tacuarembo"){
     price = 110 * q;
   }
-	document.getElementById("showprice").innerHTML = price;
+	document.getElementById("showPrice").innerHTML = price;
 	
 	alert(price);
 
