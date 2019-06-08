@@ -80,16 +80,16 @@ session_start();
   var price;
   var from = "<?=$from ?>";
   var to = "<?=$to ?>";
-  if (from == "Montevideo" && to == "Durazno"){
+  if (from == "Montevideo" && to == "Durazno" || from == "Durazno" && to == "Montevideo"){
     price = 180 * q;
   }
-  else if (from == "Montevideo" && to == "Paso de los Toros"){
+  else if (from == "Montevideo" && to == "Paso de los Toros" || from == "Paso de los Toros" && to == "Montevideo"){
     price = 250 * q;
   }
-  else if (from == "Montevideo" && to == "Tacuarembo"){
+  else if (from == "Montevideo" && to == "Tacuarembo" || from == "Rivera" && to == "Montevideo" ){
     price = 390 * q;
   }
-  else if(from == "Montevideo" && to == "Rivera"){
+  else if(from == "Montevideo" && to == "Rivera" || from == "Rivera" && to == "Montevideo"){
     price = 500 * q;
   }
 
