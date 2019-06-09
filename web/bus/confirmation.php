@@ -20,7 +20,7 @@ session_start();
   $from = $_POST["from"];
 	$to = $_POST["to"];
   $quantity = $_POST["quantity"];
-  $price = $_POST['price'];
+  $price = $_POST["price"];
  
   
   $_SESSION["from"] = $from;
@@ -66,7 +66,7 @@ session_start();
     <dt> To: <?php echo $to;?></dt><br>
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
     <form action="" method="post">
-    <dt> Total amount is (in dollars): <span name="price" id=showPrice>0</span>
+    <dt> Total amount is (in dollars): <p name="price" id=showPrice>0</p>
     <button type="submit" onclick="calculatePrice()">Calculate Price</button>
     </form>
     <form action="index.php">
