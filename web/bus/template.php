@@ -15,7 +15,7 @@
     function Footer(){
         $this->SetY(-15);
         $this->SetFont('Arial', I , 8);
-        $this->Cell(0,10, 'Present this to the driver',0,0,'C');
+        $this->Cell(0,10, 'Print and present this document to the driver',0,0,'C');
     }
  }
 
