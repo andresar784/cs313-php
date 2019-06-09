@@ -21,7 +21,7 @@ $pdf->Cell(30,6,'To',1,0,'C',1);
 $pdf->Cell(30,6,'Tickets',1,1,'C',1);
 
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,6,'$firstname',1,0,'C',1);
+$pdf->Cell(30,6,'<?php echo $firstname',1,0,'C',1);
 $pdf->Cell(30,6,'Last Name',1,0,'C',1);
 $pdf->Cell(30,6,'From',1,0,'C',1);
 $pdf->Cell(30,6,'To',1,0,'C',1);
