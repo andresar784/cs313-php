@@ -77,6 +77,7 @@ session_start();
 		</div>
     <div class="col-xs-6">
     </div>
+
 		</div>
  </div><br><br>
 
@@ -119,7 +120,8 @@ session_start();
   }
 	document.getElementById("showPrice").innerHTML = price;
 }
-</script>
+
+/script>
  
 
  
