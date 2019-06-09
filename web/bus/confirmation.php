@@ -80,8 +80,7 @@ session_start();
  </div><br><br>
 
  <script>
-
- function calculatePrice(){  
+    function calculatePrice(){  
    var q = "<?=$quantity ?>";
   var price;
   var from = "<?=$from ?>";
@@ -123,7 +122,7 @@ session_start();
   alert(price);
 }
 
-/script>
+</script>
  
 
  
