@@ -10,7 +10,7 @@
     $pdf->Cell(30,6,'From',1,0,'C',1);
     $pdf->Cell(30,6,'To',1,0,'C',1);
 
-    
+    $pdf->Output();
 
 
 
