@@ -21,7 +21,7 @@ session_start();
 	$to = $_POST["to"];
   $quantity = $_POST["quantity"];
  
-  $price =  $_COOKIE["price"];
+  $price =  $_COOKIE["height"];
   
   $_SESSION["from"] = $from;
   $_SESSION["to"] = $to;
@@ -123,7 +123,7 @@ session_start();
   document.getElementById("showPrice").innerHTML = price;
 
 $(document).ready(function () {
-  createCookie("price", $(window).height(), "10");
+  createCookie("height", $(window).height(), "10");
 });
 
 function createCookie(name, value, days) {
