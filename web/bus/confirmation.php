@@ -64,7 +64,7 @@ session_start();
     <dt> To: <?php echo $to;?></dt><br>
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
     <dt> Total amount is (in dollars): <span id="showPrice">0</span>
-    <button onclick="calculatePrice()">Click me</button>
+    <button onclick="calculatePrice()" class="btn btn-secondary btn-lg">Calculate Price</button>
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
