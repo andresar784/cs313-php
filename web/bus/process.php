@@ -51,6 +51,7 @@ session_start();
     <?php
     $price = $_SESSION["price"];
     var_dump($price);
+    echo $price;
     ?>
     <form action="login.php">
     <button type="submit" class="btn btn-primary btn-lg">Login</button><br>
