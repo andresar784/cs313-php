@@ -119,7 +119,7 @@ session_start();
 
   document.getElementById("showPrice").innerHTML = price;
   
-  alert(price);
+  
 }
 
 </script>
