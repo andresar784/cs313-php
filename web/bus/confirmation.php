@@ -21,7 +21,7 @@ session_start();
 	$to = $_POST["to"];
   $quantity = $_POST["quantity"];
  
-  $price = "<script>document.writeln(price);</script>";
+  $price =  $_COOKIE["price"];
   
   $_SESSION["from"] = $from;
   $_SESSION["to"] = $to;
@@ -121,6 +121,22 @@ session_start();
   }
 
   document.getElementById("showPrice").innerHTML = price;
+
+$(document).ready(function () {
+  createCookie("price", $(window).height(), "10");
+});
+
+function createCookie(name, value, days) {
+  var expires;
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toGMTString();
+  } else {
+   expires = "";
+  }
+  document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+}
   
   
 }
