@@ -15,12 +15,12 @@ session_start();
  </head>
 <body>
 <?php
-  $from = $to = $quantity = $price "";
+  $from = $to = $quantity = "";
   
   $from = $_POST["from"];
 	$to = $_POST["to"];
   $quantity = $_POST["quantity"];
-  $price = $_POST["price"];
+ 
  
   
   $_SESSION["from"] = $from;
@@ -64,7 +64,7 @@ session_start();
     <dt> To: <?php echo $to;?></dt><br>
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
     
-    <dt> Total amount is (in dollars): <p name="price" id=showPrice>0</p>
+    <dt> Total amount is (in dollars): <p id=showPrice>0</p>
     <button type="submit" onclick="calculatePrice()">Calculate Price</button>
     
     <form action="index.php">
@@ -82,6 +82,7 @@ session_start();
  </div><br><br>
 
  <script>
+
  function calculatePrice(){  
    var q = "<?=$quantity ?>";
   var price;
