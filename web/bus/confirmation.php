@@ -118,7 +118,7 @@ session_start();
     price = 110 * q;
   }
 
-  document.getElementById('showPrice').innerHTML = price;
+  document.getElementById("showPrice").innerHTML = price;
   
   alert(price);
 }
