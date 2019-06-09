@@ -1,7 +1,5 @@
 <?php
-require 'conexion.php';
-
-
+include 'template.php';
 
 $pdf = new PDF();
 $pdf->AliasNbPages();
