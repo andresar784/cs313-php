@@ -26,6 +26,7 @@ session_start();
   $_SESSION["from"] = $from;
   $_SESSION["to"] = $to;
   $_SESSION["quantity"] = $quantity;
+  $_SESSION["price"] = $price;
 
 
 ?>
