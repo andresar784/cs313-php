@@ -21,7 +21,7 @@ session_start();
 	$to = $_POST["to"];
   $quantity = $_POST["quantity"];
  
- 
+  $price = "<script>document.writeln(price);</script>";
   
   $_SESSION["from"] = $from;
   $_SESSION["to"] = $to;
@@ -59,7 +59,7 @@ session_start();
 <div class="container"> 
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
-    
+    echo $price;
 		<dt> You are travelling from: <?php echo $from?> </dt><br>
     <dt> To: <?php echo $to;?></dt><br>
 		<dt> Total of passengers are: <?php echo $quantity;?> </dt><br>
