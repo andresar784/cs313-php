@@ -1,8 +1,10 @@
 <?php
 
     include('template.php');
+    
     $pdf = new PDF();
-    $pdf->Addpage();
+    
+    $pdf->AddPage();
 
     $pdf->SetFont('Arial','B',12);
     $pdf->Cell(30,6,'Name',1,0,'C',1);
