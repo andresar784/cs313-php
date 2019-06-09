@@ -1,6 +1,6 @@
 <?php
 
-    include('template.php');
+    include 'template.php';
     
     $pdf = new PDF();
     
