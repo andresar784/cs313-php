@@ -48,11 +48,7 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     <dt>Login:</dt><br>
-    <?php
-    $price = $_SESSION["price"];
-    var_dump($price);
-    echo $price;
-    ?>
+    
     <form action="login.php">
     <button type="submit" class="btn btn-primary btn-lg">Login</button><br>
     </form>
