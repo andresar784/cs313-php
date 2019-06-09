@@ -117,6 +117,7 @@ session_start();
   else if(from == "Tacuarembo" && to == "Rivera" || from == "Rivera" && to == "Tacuarembo"){
     price = 110 * q;
   }
+  
 	document.getElementById("showPrice").innerHTML = price;
 }
 
