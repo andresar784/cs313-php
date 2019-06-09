@@ -21,6 +21,8 @@ $pdf->Cell(30,6,'From',1,0,'C',1);
 $pdf->Cell(30,6,'To',1,0,'C',1);
 $pdf->Cell(30,6,'Tickets',1,1,'C',1);
 
+$this->Ln(20);
+$pdf->SetFillColor(88,178,255);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,6,''.$firstname,1,0,'C',1);
 $pdf->Cell(30,6,''.$lastname,1,0,'C',1);
