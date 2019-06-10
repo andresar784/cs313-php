@@ -69,9 +69,8 @@ session_start();
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
-    <form action="process.php" method="post">
-    <input type="hidden" id="pr" value="0">
-    <button type="submit" class="btn btn-primary btn-lg" onclick="calculatePrice()">Confirm 2/4</button>
+    <form action="process.php">
+   <button type="submit" class="btn btn-primary btn-lg">Confirm 2/4</button>
     <form>
 		</div>
 		</div>
@@ -118,20 +117,13 @@ session_start();
   else if(from == "Tacuarembo" && to == "Rivera" || from == "Rivera" && to == "Tacuarembo"){
     price = 110 * q;
   }
-  var element = document.getElementById("pr");
-  element.value = price;
-  //document.getElementById("pr").value = price;
-  alert(price);
+ 
+  document.getElementById("showPrice").innerHTML = price;
+ 
 }
 
 </script>
- 
-
- 
-
-
-
-<footer class="container-fluid text-center">
+ <footer class="container-fluid text-center">
   <p>Bus Star Copyright 2018 - <?php echo date(Y)?></p>  
 </footer>
 

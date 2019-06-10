@@ -16,10 +16,6 @@ session_start();
   
 </head>
 <body>
-<?php
-  $price ="";
-  $price = $_POST["price"];
-?>
 
 
 <div class="jumbotron">
@@ -52,9 +48,7 @@ session_start();
 	<div class="p-3 text-white text-center">
 		<div class="col-xs-6">
     <dt>Login:</dt><br>
-    <?php
-    var_dump($price);
-    ?>    
+       
     <form action="login.php">
     <button type="submit" class="btn btn-primary btn-lg">Login</button><br>
     </form>
