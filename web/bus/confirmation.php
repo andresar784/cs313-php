@@ -70,8 +70,8 @@ session_start();
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
     <form action="process.php" method="post">
-    <<input type="hidden" id="pr">
-    <button type="submit" class="btn btn-primary btn-lg">Confirm 2/4</button>
+    <input type="hidden" id="pr" value="0">
+    <button type="submit" class="btn btn-primary btn-lg" onclick="calculatePrice()">Confirm 2/4</button>
     <form>
 		</div>
 		</div>
@@ -119,7 +119,7 @@ session_start();
     price = 110 * q;
   }
 
-  document.getElementById("showPrice").innerHTML = price;
+  document.getElementById("pr").value = price;
 }
 
 </script>
