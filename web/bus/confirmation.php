@@ -69,7 +69,8 @@ session_start();
     <form action="index.php">
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
-    <form action="process.php">
+    <form action="process.php" method="post">
+    <<input type="hidden" id="pr">
     <button type="submit" class="btn btn-primary btn-lg">Confirm 2/4</button>
     <form>
 		</div>
@@ -120,8 +121,6 @@ session_start();
 
   document.getElementById("showPrice").innerHTML = price;
 }
-
-alert(price);
 
 </script>
  
