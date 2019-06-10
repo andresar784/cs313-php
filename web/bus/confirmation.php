@@ -70,7 +70,7 @@ session_start();
     <button  type="submit"  class="btn btn-primary btn-lg" >Return</button>
     </form>
     <form action="process.php" method="post">
-    <input type="hidden" id="pr" value="500">
+    <input type="hidden" id="pr">
     <button type="submit" class="btn btn-primary btn-lg" onclick="calculatePrice()">Confirm 2/4</button>
     <form>
 		</div>
