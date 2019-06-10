@@ -17,8 +17,8 @@ session_start();
 </head>
 <body>
 <<?php
- $price ="";
-  $price = $_POST["price"];
+ $price ="56";
+  //$price = $_POST["price"];
 ?>
 
 
