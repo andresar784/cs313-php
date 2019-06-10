@@ -121,6 +121,8 @@ session_start();
   document.getElementById("showPrice").innerHTML = price;
 }
 
+alert("The price is "price;)
+
 </script>
  
 
